@@ -31,6 +31,11 @@
 		67E384C12517E3AD00296DCE /* White.png in Resources */ = {isa = PBXBuildFile; fileRef = 67E384B72517E3AD00296DCE /* White.png */; };
 		67E384C22517E3AD00296DCE /* Turquoise.png in Resources */ = {isa = PBXBuildFile; fileRef = 67E384B82517E3AD00296DCE /* Turquoise.png */; };
 		67E384C42519720F00296DCE /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E384C32519720F00296DCE /* HelpViewController.swift */; };
+		67E384C6251BA64400296DCE /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E384C5251BA64400296DCE /* SoundManager.swift */; };
+		67E384C9251BA66B00296DCE /* TDE_V2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 67E384C8251BA66B00296DCE /* TDE_V2.m4a */; };
+		67E384CB251BB04800296DCE /* soundOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 67E384CA251BB04800296DCE /* soundOff.png */; };
+		67E384D2251BDB3100296DCE /* Select_V1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 67E384D1251BDB3100296DCE /* Select_V1.m4a */; };
+		67E384D4251BE35D00296DCE /* SelectorBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E384D3251BE35D00296DCE /* SelectorBaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +65,11 @@
 		67E384B72517E3AD00296DCE /* White.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = White.png; sourceTree = "<group>"; };
 		67E384B82517E3AD00296DCE /* Turquoise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Turquoise.png; sourceTree = "<group>"; };
 		67E384C32519720F00296DCE /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		67E384C5251BA64400296DCE /* SoundManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		67E384C8251BA66B00296DCE /* TDE_V2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = TDE_V2.m4a; sourceTree = "<group>"; };
+		67E384CA251BB04800296DCE /* soundOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = soundOff.png; sourceTree = "<group>"; };
+		67E384D1251BDB3100296DCE /* Select_V1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Select_V1.m4a; sourceTree = "<group>"; };
+		67E384D3251BE35D00296DCE /* SelectorBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorBaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,12 +102,15 @@
 		6776A03624E1B0A100D5C5C1 /* The Domino Effect */ = {
 			isa = PBXGroup;
 			children = (
+				67E384C5251BA64400296DCE /* SoundManager.swift */,
 				6776A03724E1B0A100D5C5C1 /* AppDelegate.swift */,
 				6776A03924E1B0A100D5C5C1 /* SceneDelegate.swift */,
 				6776A03B24E1B0A100D5C5C1 /* ViewController.swift */,
 				67E384C32519720F00296DCE /* HelpViewController.swift */,
+				67E384D3251BE35D00296DCE /* SelectorBaseViewController.swift */,
 				6776A03D24E1B0A100D5C5C1 /* Main.storyboard */,
 				6776A04024E1B0A400D5C5C1 /* Assets.xcassets */,
+				67E384C7251BA64B00296DCE /* Sounds */,
 				677BFA52250E686F00C3CB15 /* Images */,
 				6776A04224E1B0A400D5C5C1 /* LaunchScreen.storyboard */,
 				6776A04524E1B0A400D5C5C1 /* Info.plist */,
@@ -110,6 +123,7 @@
 			children = (
 				67E384AE2517E38900296DCE /* Dominoes */,
 				677BFA65250E7ED200C3CB15 /* startbutton.png */,
+				67E384CA251BB04800296DCE /* soundOff.png */,
 				677BFA63250E73AD00C3CB15 /* start.png */,
 				677BFA61250E725B00C3CB15 /* The Domino Effect Logo-02.png */,
 				677BFA5B250E68AC00C3CB15 /* arrow.png */,
@@ -135,6 +149,15 @@
 				67E384B12517E3AC00296DCE /* Yellow.png */,
 			);
 			path = Dominoes;
+			sourceTree = "<group>";
+		};
+		67E384C7251BA64B00296DCE /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				67E384D1251BDB3100296DCE /* Select_V1.m4a */,
+				67E384C8251BA66B00296DCE /* TDE_V2.m4a */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,16 +220,19 @@
 			files = (
 				677BFA62250E725B00C3CB15 /* The Domino Effect Logo-02.png in Resources */,
 				67E384C02517E3AD00296DCE /* Green.png in Resources */,
+				67E384C9251BA66B00296DCE /* TDE_V2.m4a in Resources */,
 				67E384C12517E3AD00296DCE /* White.png in Resources */,
 				677BFA5E250E68AC00C3CB15 /* Settings.png in Resources */,
 				67E384BF2517E3AD00296DCE /* Purple.png in Resources */,
 				677BFA66250E7ED200C3CB15 /* startbutton.png in Resources */,
 				677BFA5F250E68AC00C3CB15 /* arrow.png in Resources */,
+				67E384D2251BDB3100296DCE /* Select_V1.m4a in Resources */,
 				677BFA5D250E68AC00C3CB15 /* sound.png in Resources */,
 				67E384BE2517E3AD00296DCE /* Red.png in Resources */,
 				67E384BA2517E3AD00296DCE /* Orange.png in Resources */,
 				6776A04424E1B0A400D5C5C1 /* LaunchScreen.storyboard in Resources */,
 				677BFA60250E68AC00C3CB15 /* help.png in Resources */,
+				67E384CB251BB04800296DCE /* soundOff.png in Resources */,
 				6776A04124E1B0A400D5C5C1 /* Assets.xcassets in Resources */,
 				67E384BB2517E3AD00296DCE /* Yellow.png in Resources */,
 				677BFA64250E73AD00C3CB15 /* start.png in Resources */,
@@ -227,8 +253,10 @@
 			files = (
 				6776A03C24E1B0A100D5C5C1 /* ViewController.swift in Sources */,
 				6776A03824E1B0A100D5C5C1 /* AppDelegate.swift in Sources */,
+				67E384D4251BE35D00296DCE /* SelectorBaseViewController.swift in Sources */,
 				6776A03A24E1B0A100D5C5C1 /* SceneDelegate.swift in Sources */,
 				67E384C42519720F00296DCE /* HelpViewController.swift in Sources */,
+				67E384C6251BA64400296DCE /* SoundManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

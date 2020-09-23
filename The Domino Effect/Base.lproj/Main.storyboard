@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,21 +13,24 @@
             <objects>
                 <viewController id="BYZ-38-t0r" userLabel="Home View Controller" customClass="ViewController" customModule="The_Domino_Effect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="The Domino Effect Logo-02.png" translatesAutoresizingMaskIntoConstraints="NO" id="OgN-9V-OqN" userLabel="Title Logo">
-                                <rect key="frame" x="32" y="30" width="350" height="310"/>
+                                <rect key="frame" x="32" y="74" width="350" height="320"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEW-BH-MyN" userLabel="Start button">
-                                <rect key="frame" x="0.0" y="370" width="414" height="254"/>
+                                <rect key="frame" x="0.0" y="424" width="414" height="254"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" image="YES"/>
                                 </accessibility>
                                 <state key="normal" image="startbutton.png"/>
+                                <connections>
+                                    <action selector="startTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UAm-8l-HXD"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleAspectFit" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vSv-LN-fky">
-                                <rect key="frame" x="20" y="677" width="374" height="87"/>
+                                <rect key="frame" x="20" y="731" width="374" height="87"/>
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGg-0c-0h4" userLabel="Help">
                                         <rect key="frame" x="0.0" y="0.0" width="90" height="87"/>
@@ -45,6 +48,9 @@
                                             <constraint firstAttribute="width" secondItem="EuB-F0-aWd" secondAttribute="height" multiplier="30:29" id="Cd5-Ha-rcy"/>
                                         </constraints>
                                         <state key="normal" image="Settings.png"/>
+                                        <connections>
+                                            <action selector="settingsTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xcn-1c-Loh"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PLl-Hn-fue" userLabel="Sound">
                                         <rect key="frame" x="284" y="0.0" width="90" height="87"/>
@@ -52,6 +58,9 @@
                                             <constraint firstAttribute="width" secondItem="PLl-Hn-fue" secondAttribute="height" multiplier="30:29" id="V7P-S7-WaF"/>
                                         </constraints>
                                         <state key="normal" image="sound.png"/>
+                                        <connections>
+                                            <action selector="soundTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FCB-Rz-mi4"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -89,39 +98,37 @@
                         <outlet property="settingButton" destination="EuB-F0-aWd" id="MBF-ac-2uw"/>
                         <outlet property="soundButton" destination="PLl-Hn-fue" id="aMK-PU-R5o"/>
                         <outlet property="startButton" destination="CEW-BH-MyN" id="8QY-NQ-TYT"/>
-                        <segue destination="4hq-cB-7h8" kind="show" id="qap-fM-sH7"/>
+                        <segue destination="4hq-cB-7h8" kind="presentation" identifier="selectionBase" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="qap-fM-sH7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="239" y="138"/>
         </scene>
-        <!--Settings View Controller-->
-        <scene sceneID="WW8-Kg-apG">
-            <objects>
-                <viewController id="jfy-QU-DU3" userLabel="Settings View Controller" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="vSX-vk-TT5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="Z6x-30-Fap"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ro2-hn-yv6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="910" y="1003"/>
-        </scene>
-        <!--View Controller-->
+        <!--Selector Base View Controller-->
         <scene sceneID="TAz-Yz-nXX">
             <objects>
-                <viewController id="4hq-cB-7h8" sceneMemberID="viewController">
+                <viewController id="4hq-cB-7h8" userLabel="Selector Base View Controller" customClass="SelectorBaseViewController" customModule="The_Domino_Effect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" tag="1" contentMode="scaleToFill" id="EIu-P5-IMD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cHF-KU-Jeb">
-                                <rect key="frame" x="20" y="194" width="372" height="648"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWk-Fd-9a2" userLabel="Back">
+                                <rect key="frame" x="20" y="61" width="90" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="87" id="AB5-Ff-R60"/>
+                                    <constraint firstAttribute="width" constant="90" id="pVK-nf-pRE"/>
+                                </constraints>
+                                <state key="normal" image="arrow.png"/>
+                                <connections>
+                                    <action selector="backSelect:" destination="4hq-cB-7h8" eventType="touchUpInside" id="6Wt-gv-t18"/>
+                                    <action selector="helpTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iRY-xN-WoG"/>
+                                    <segue destination="pe2-bs-u5L" kind="unwind" identifier="unwind" unwindAction="unwindToMainMenuWithSender:" id="DeS-Ju-S6O"/>
+                                </connections>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cHF-KU-Jeb">
+                                <rect key="frame" x="21" y="194" width="374" height="648"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1oT-V5-NLa">
                                     <size key="itemSize" width="130" height="184"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -147,22 +154,35 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SELECT NUMBER" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8Z-qK-5wN">
+                                <rect key="frame" x="141" y="44" width="254" height="125"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="48"/>
+                                <color key="textColor" red="1" green="0.955133597" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="cHF-KU-Jeb" firstAttribute="top" secondItem="T8Z-qK-5wN" secondAttribute="bottom" constant="25" id="4Or-ap-Bjp"/>
+                            <constraint firstItem="T8Z-qK-5wN" firstAttribute="leading" secondItem="lWk-Fd-9a2" secondAttribute="trailing" constant="31" id="5QH-65-jPP"/>
                             <constraint firstItem="cHF-KU-Jeb" firstAttribute="leading" secondItem="ivx-nP-Nfb" secondAttribute="leading" constant="21" id="K3q-dU-pqA"/>
                             <constraint firstItem="cHF-KU-Jeb" firstAttribute="trailing" secondItem="ivx-nP-Nfb" secondAttribute="trailing" constant="-19" id="Lq9-mg-vDU"/>
+                            <constraint firstItem="lWk-Fd-9a2" firstAttribute="top" secondItem="ivx-nP-Nfb" secondAttribute="top" constant="17" id="NNu-Qc-HHc"/>
                             <constraint firstItem="cHF-KU-Jeb" firstAttribute="top" secondItem="ivx-nP-Nfb" secondAttribute="top" constant="150" id="XRP-QO-xKe"/>
+                            <constraint firstItem="T8Z-qK-5wN" firstAttribute="top" secondItem="ivx-nP-Nfb" secondAttribute="top" id="jVh-aR-TWB"/>
+                            <constraint firstItem="ivx-nP-Nfb" firstAttribute="trailing" secondItem="T8Z-qK-5wN" secondAttribute="trailing" constant="19" id="mdy-k8-8xQ"/>
+                            <constraint firstItem="lWk-Fd-9a2" firstAttribute="leading" secondItem="ivx-nP-Nfb" secondAttribute="leading" constant="20" id="rFW-6g-0BH"/>
                             <constraint firstItem="ivx-nP-Nfb" firstAttribute="bottom" secondItem="cHF-KU-Jeb" secondAttribute="bottom" constant="20" id="xy4-sf-KgB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ivx-nP-Nfb"/>
                     </view>
                     <navigationItem key="navigationItem" id="51m-zB-6Mm"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" id="pE1-2d-ES4"/>
+                        <outlet property="backButton" destination="lWk-Fd-9a2" id="ieY-7B-tya"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="25K-Hj-1o4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="pe2-bs-u5L" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1201.449275362319" y="137.94642857142856"/>
         </scene>
@@ -184,14 +204,14 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="q3F-KC-MqK">
                                         <rect key="frame" x="20" y="0.0" width="254" height="568"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABOUT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J5w-d4-AF9">
-                                                <rect key="frame" x="0.0" y="0.0" width="254" height="271.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABOUT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J5w-d4-AF9">
+                                                <rect key="frame" x="0.0" y="0.0" width="254" height="271.33333333333331"/>
                                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="50"/>
                                                 <color key="textColor" red="0.0" green="1" blue="0.018125088720000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WgY-JO-cnv">
-                                                <rect key="frame" x="0.0" y="271.5" width="254" height="108.5"/>
+                                                <rect key="frame" x="0.0" y="271.33333333333331" width="254" height="108.66666666666669"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                 <color key="textColor" red="1" green="0.95513359695713218" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
@@ -256,6 +276,7 @@
         <image name="Red.png" width="108.23999786376953" height="171.83999633789062"/>
         <image name="Settings.png" width="90" height="87"/>
         <image name="The Domino Effect Logo-02.png" width="208.08000183105469" height="196.32000732421875"/>
+        <image name="arrow.png" width="90" height="87"/>
         <image name="help.png" width="90" height="87"/>
         <image name="sound.png" width="90" height="87"/>
         <image name="startbutton.png" width="29.808000564575195" height="19"/>
