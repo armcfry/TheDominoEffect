@@ -25,51 +25,73 @@ class SelectorBaseViewController: UIViewController{
     
     @IBAction func moveToZero(_ sender: UIButton) {
         groupSelect = 0
-        performSegue(withIdentifier: "toNumberView", sender: self)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
+           self.performSegue(withIdentifier: "toNumberView", sender: self)
+        })
     }
     @IBAction func moveToOne(_ sender: UIButton) {
         groupSelect = 1
-        performSegue(withIdentifier: "toNumberView", sender: self)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
+           self.performSegue(withIdentifier: "toNumberView", sender: self)
+        })
     }
     @IBAction func moveToTwo(_ sender: UIButton) {
         groupSelect = 2
-        performSegue(withIdentifier: "toNumberView", sender: self)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
+           self.performSegue(withIdentifier: "toNumberView", sender: self)
+        })
     }
     @IBAction func moveToThree(_ sender: UIButton) {
         groupSelect = 3
-        performSegue(withIdentifier: "toNumberView", sender: self)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
+           self.performSegue(withIdentifier: "toNumberView", sender: self)
+        })
     }
     @IBAction func moveToFour(_ sender: UIButton) {
         groupSelect = 4
-        performSegue(withIdentifier: "toNumberView", sender: self)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
+           self.performSegue(withIdentifier: "toNumberView", sender: self)
+        })
     }
     @IBAction func moveToFive(_ sender: UIButton) {
         groupSelect = 5
-        performSegue(withIdentifier: "toNumberView", sender: self)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
+           self.performSegue(withIdentifier: "toNumberView", sender: self)
+        })
     }
     @IBAction func moveToSix(_ sender: UIButton) {
         groupSelect = 6
-        performSegue(withIdentifier: "toNumberView", sender: self)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
+           self.performSegue(withIdentifier: "toNumberView", sender: self)
+        })
     }
     @IBAction func moveToSeven(_ sender: UIButton) {
         groupSelect = 7
-        performSegue(withIdentifier: "toNumberView", sender: self)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
+           self.performSegue(withIdentifier: "toNumberView", sender: self)
+        })
     }
     @IBAction func moveToEight(_ sender: UIButton) {
         groupSelect = 8
-        performSegue(withIdentifier: "toNumberView", sender: self)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
+           self.performSegue(withIdentifier: "toNumberView", sender: self)
+        })
     }
     @IBAction func moveToNine(_ sender: UIButton) {
         groupSelect = 9
-        performSegue(withIdentifier: "toNumberView", sender: self)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
+           self.performSegue(withIdentifier: "toNumberView", sender: self)
+        })
     }
     
     // gather information to send to the next VC
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        let segVC = segue.destination as! NumberMenuViewController
+        if segue.destination is NumberMenuViewController{
+            let segVC = segue.destination as! NumberMenuViewController
         
-        // send the VC what domino was selected
-        segVC.numberToShow = groupSelect
+            // send the VC what domino was selected
+            segVC.numberToShow = groupSelect
+        }
     }
     
     

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		676929E225211C5A00A9A04B /* NumberMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676929E125211C5A00A9A04B /* NumberMenuViewController.swift */; };
+		676929EA2522DB9000A9A04B /* start2.png in Resources */ = {isa = PBXBuildFile; fileRef = 676929E92522DB9000A9A04B /* start2.png */; };
 		6776A03824E1B0A100D5C5C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6776A03724E1B0A100D5C5C1 /* AppDelegate.swift */; };
 		6776A03A24E1B0A100D5C5C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6776A03924E1B0A100D5C5C1 /* SceneDelegate.swift */; };
 		6776A03C24E1B0A100D5C5C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6776A03B24E1B0A100D5C5C1 /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		676929E125211C5A00A9A04B /* NumberMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberMenuViewController.swift; sourceTree = "<group>"; };
+		676929E92522DB9000A9A04B /* start2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start2.png; sourceTree = "<group>"; };
 		6776A03424E1B0A100D5C5C1 /* The Domino Effect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Domino Effect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6776A03724E1B0A100D5C5C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6776A03924E1B0A100D5C5C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				677BFA65250E7ED200C3CB15 /* startbutton.png */,
 				67E384CA251BB04800296DCE /* soundOff.png */,
 				677BFA63250E73AD00C3CB15 /* start.png */,
+				676929E92522DB9000A9A04B /* start2.png */,
 				677BFA61250E725B00C3CB15 /* The Domino Effect Logo-02.png */,
 				677BFA5B250E68AC00C3CB15 /* arrow.png */,
 				677BFA5C250E68AC00C3CB15 /* help.png */,
@@ -242,6 +245,7 @@
 				67E384B92517E3AD00296DCE /* LimeGreen.png in Resources */,
 				67E384BD2517E3AD00296DCE /* Blue.png in Resources */,
 				67E384C22517E3AD00296DCE /* Turquoise.png in Resources */,
+				676929EA2522DB9000A9A04B /* start2.png in Resources */,
 				6776A03F24E1B0A100D5C5C1 /* Main.storyboard in Resources */,
 				67E384BC2517E3AD00296DCE /* Pink.png in Resources */,
 			);

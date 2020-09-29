@@ -24,7 +24,7 @@
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" image="YES"/>
                                 </accessibility>
-                                <state key="normal" image="startbutton.png"/>
+                                <state key="normal" image="start2.png"/>
                                 <connections>
                                     <action selector="startTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UAm-8l-HXD"/>
                                 </connections>
@@ -464,6 +464,6 @@
         <image name="arrow.png" width="90" height="87"/>
         <image name="help.png" width="90" height="87"/>
         <image name="sound.png" width="90" height="87"/>
-        <image name="startbutton.png" width="29.808000564575195" height="19"/>
+        <image name="start2.png" width="247" height="157"/>
     </resources>
 </document>
