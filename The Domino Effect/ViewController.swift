@@ -22,14 +22,7 @@ class ViewController: UIViewController, HelpViewControllerProtocol {
     @IBOutlet weak var startButton: UIButton!
     
     @IBAction func startTap(_ sender: UIButton) {
-//        func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//
-//            super.prepare(for: segue, sender: sender)
-//
-//            if let secondViewController = segue.destination as? SecondViewController {
-//                secondViewController.modalPresentationStyle = .fullScreen
-//            }
-//        }
+        player.playSound(effect: .select)
         performSegue(withIdentifier: "selectionBase", sender: self)
     }
     
