@@ -14,6 +14,7 @@ class ViewController: UIViewController, HelpViewControllerProtocol {
     let player = SoundManager()
     var music = false
     var helpDialogue:HelpViewController?
+    var numStartTap = 0
 
     // IBOutlet Variables
     @IBOutlet weak var soundButton: UIButton!
@@ -23,6 +24,10 @@ class ViewController: UIViewController, HelpViewControllerProtocol {
     
     @IBAction func startTap(_ sender: UIButton) {
         player.playSound(effect: .select)
+        if numStartTap == 0{
+            DominoManager.shared.initializeDominos()
+        }
+        numStartTap += 1
         performSegue(withIdentifier: "selectionBase", sender: self)
     }
     

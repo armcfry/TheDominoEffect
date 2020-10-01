@@ -8,9 +8,10 @@
 
 import Foundation
 
-class Domino {
-    var head = 0
-    var tail = 0
-    var isSelected = false
+struct Domino {
+    var head:Int
+    var tail:Int
+    var isSelected:Bool
+    var imageName:String
 }
 
