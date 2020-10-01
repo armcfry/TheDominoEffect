@@ -183,8 +183,8 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SELECT NUMBER" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8Z-qK-5wN">
-                                <rect key="frame" x="141" y="44" width="254" height="125"/>
-                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="48"/>
+                                <rect key="frame" x="141" y="44.000000000000007" width="254" height="114.66666666666669"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
                                 <color key="textColor" red="1" green="0.955133597" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -210,6 +210,18 @@
                                 <state key="normal" image="Pink.png"/>
                                 <connections>
                                     <action selector="moveToEight:" destination="4hq-cB-7h8" eventType="touchUpInside" id="MAZ-pb-GLF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvV-l0-8cH">
+                                <rect key="frame" x="177" y="764" width="149" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="56"/>
+                                <state key="normal" title="SORT">
+                                    <color key="titleColor" red="1" green="0.955133597" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="moveToSort:" destination="4hq-cB-7h8" eventType="touchUpInside" id="HPx-j0-fgt"/>
+                                    <segue destination="DhH-tV-hx4" kind="presentation" identifier="moveToSort" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="g0L-0M-0Zh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -445,7 +457,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="21S-RL-NE3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="9re-6T-lmN" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1688" y="138"/>
+            <point key="canvasLocation" x="1914" y="-206"/>
+        </scene>
+        <!--Results View Controller-->
+        <scene sceneID="kVp-3q-aFs">
+            <objects>
+                <viewController id="DhH-tV-hx4" userLabel="Results View Controller" customClass="ResultsViewController" customModule="The_Domino_Effect" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" tag="1" contentMode="scaleToFill" id="vw3-aQ-HCa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Wq-MO-dD5" userLabel="Back">
+                                <rect key="frame" x="20" y="61" width="90" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="aYS-lk-8TM"/>
+                                    <constraint firstAttribute="height" constant="87" id="xQt-zs-GBc"/>
+                                </constraints>
+                                <state key="normal" image="arrow.png"/>
+                                <connections>
+                                    <action selector="backSelect:" destination="DhH-tV-hx4" eventType="touchUpInside" id="1Ej-MC-Qqy"/>
+                                    <action selector="helpTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="976-em-q4n"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qu7-ZP-WxI">
+                                <rect key="frame" x="141" y="44" width="254" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="48"/>
+                                <color key="textColor" red="1" green="0.955133597" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="i1l-dJ-Ep9"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Qu7-ZP-WxI" firstAttribute="top" secondItem="i1l-dJ-Ep9" secondAttribute="top" id="3Yn-8E-Q18"/>
+                            <constraint firstItem="Qu7-ZP-WxI" firstAttribute="leading" secondItem="6Wq-MO-dD5" secondAttribute="trailing" constant="31" id="XKU-Sk-fYo"/>
+                            <constraint firstItem="i1l-dJ-Ep9" firstAttribute="trailing" secondItem="Qu7-ZP-WxI" secondAttribute="trailing" constant="19" id="dgF-P4-pvY"/>
+                            <constraint firstItem="6Wq-MO-dD5" firstAttribute="leading" secondItem="i1l-dJ-Ep9" secondAttribute="leading" constant="20" id="ij2-fB-gbk"/>
+                            <constraint firstItem="6Wq-MO-dD5" firstAttribute="top" secondItem="i1l-dJ-Ep9" secondAttribute="top" constant="17" id="mHr-62-aig"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6l4-QX-Y7G"/>
+                    <connections>
+                        <segue destination="jQb-b9-3lt" kind="unwind" identifier="unwind" unwindAction="unwindToSelectorBaseWithSender:" id="bG3-BD-g9u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2pk-yf-bTK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="jQb-b9-3lt" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1913" y="609"/>
         </scene>
     </scenes>
     <resources>
