@@ -48,39 +48,57 @@ class NumberMenuViewController: UIViewController{
                 button.setImage(UIImage(named: thisBImage), for: .normal)
             }
         case 1:
+            let imgName = "Orange Dominos Non-Glow Set-0"
             for button in dominoCollection{
+                let thisBImage = "\(imgName)\(button.tag).png"
                 button.setImage(UIImage(named: "Orange.png"), for: .normal)
             }
         case 2:
+            let imgName = "Yellow Dominos Non-Glow Set-0"
             for button in dominoCollection{
-                button.setImage(UIImage(named: "Yellow.png"), for: .normal)
+                let thisBImage = "\(imgName)\(button.tag).png"
+                button.setImage(UIImage(named: thisBImage), for: .normal)
             }
         case 3:
+            let imgName = "Lime Green Dominos Non-Glow Set-0"
             for button in dominoCollection{
-                button.setImage(UIImage(named: "LimeGreen.png"), for: .normal)
+                let thisBImage = "\(imgName)\(button.tag).png"
+                button.setImage(UIImage(named: thisBImage), for: .normal)
             }
         case 4:
+            let imgName = "Forest Green Dominoes Non-Glow Set-0"
             for button in dominoCollection{
-                button.setImage(UIImage(named: "Green.png"), for: .normal)
+                let thisBImage = "\(imgName)\(button.tag).png"
+                button.setImage(UIImage(named: thisBImage), for: .normal)
             }
         case 5:
+            let imgName = "Aqua Dominoes Non-Glow Set-0"
             for button in dominoCollection{
-                button.setImage(UIImage(named: "Turquoise.png"), for: .normal)
+                let thisBImage = "\(imgName)\(button.tag).png"
+                button.setImage(UIImage(named: thisBImage), for: .normal)
             }
         case 6:
+            let imgName = "Royal Blue Dominoes Non-Glow Set-0"
             for button in dominoCollection{
-                button.setImage(UIImage(named: "Blue.png"), for: .normal)
+                let thisBImage = "\(imgName)\(button.tag).png"
+                button.setImage(UIImage(named: thisBImage), for: .normal)
             }
         case 7:
+            let imgName = "Purple Dominos Non-Glow Set-0"
             for button in dominoCollection{
+                let thisBImage = "\(imgName)\(button.tag).png"
                 button.setImage(UIImage(named: "Purple.png"), for: .normal)
             }
         case 8:
+            let imgName = "Pink Dominos Non-Glow Set-0"
             for button in dominoCollection{
+                let thisBImage = "\(imgName)\(button.tag).png"
                 button.setImage(UIImage(named: "Pink.png"), for: .normal)
             }
         case 9:
+            let imgName = "White Dominos Non-Glow Set-0"
             for button in dominoCollection{
+                let thisBImage = "\(imgName)\(button.tag).png"
                 button.setImage(UIImage(named: "White.png"), for: .normal)
             }
         default:
