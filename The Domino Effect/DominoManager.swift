@@ -15,6 +15,7 @@ class DominoManager {
         
     static let shared = DominoManager()
     
+    // set up all dominos; will be called on reset so the user can sort again
     func initializeDominos()
     {
         for _ in 0..<9 {
@@ -24,8 +25,6 @@ class DominoManager {
             }
             dominos.append(temp)
         }
-        print(dominos.count)
-        print(dominos[9])
     }
     //Initializer access level change now
     private init(){}

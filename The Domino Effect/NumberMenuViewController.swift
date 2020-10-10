@@ -42,8 +42,10 @@ class NumberMenuViewController: UIViewController{
         // change the outfit for the buttons
         switch numberToShow {
         case 0:
+            let imgName = "Red Dominos Non-Glow Set-0"
             for button in dominoCollection{
-                button.setImage(UIImage(named: "Red.png"), for: .normal)
+                let thisBImage = "\(imgName)\(button.tag).png"
+                button.setImage(UIImage(named: thisBImage), for: .normal)
             }
         case 1:
             for button in dominoCollection{
