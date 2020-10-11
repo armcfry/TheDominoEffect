@@ -167,17 +167,17 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rko-j7-QIJ" userLabel="Purple">
-                                <rect key="frame" x="141" y="537" width="109" height="172"/>
+                                <rect key="frame" x="135" y="522" width="122" height="202"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Purple.png"/>
+                                <state key="normal" image="Purple Dominoes Non-Glow Set-08.png"/>
                                 <connections>
                                     <action selector="moveToSeven:" destination="4hq-cB-7h8" eventType="touchUpInside" id="CWK-XQ-dVp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j0B-xL-Jan" userLabel="White">
-                                <rect key="frame" x="20" y="717" width="109" height="172"/>
+                                <rect key="frame" x="14" y="702" width="121" height="202"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="White.png"/>
+                                <state key="normal" image="White Dominoes Non-Glow Set-010.png"/>
                                 <connections>
                                     <action selector="moveToNine:" destination="4hq-cB-7h8" eventType="touchUpInside" id="gOR-jG-Ta1"/>
                                 </connections>
@@ -205,9 +205,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5FP-Tc-nCT" userLabel="Pink">
-                                <rect key="frame" x="258" y="537" width="109" height="172"/>
+                                <rect key="frame" x="252" y="522" width="122" height="202"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Pink.png"/>
+                                <state key="normal" image="Pink Dominoes Non-Glow Set-09.png"/>
                                 <connections>
                                     <action selector="moveToEight:" destination="4hq-cB-7h8" eventType="touchUpInside" id="MAZ-pb-GLF"/>
                                 </connections>
@@ -389,12 +389,12 @@
                             <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="reI-iK-lNv" userLabel="Purple">
                                 <rect key="frame" x="135" y="522" width="122" height="202"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Aqua Dominoes Non-Glow Set-01.png"/>
+                                <state key="normal" image="Purple Dominoes Non-Glow Set-08.png"/>
                             </button>
                             <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wD3-FG-fsv" userLabel="White">
-                                <rect key="frame" x="14" y="702" width="122" height="202"/>
+                                <rect key="frame" x="15" y="702" width="121" height="202"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Aqua Dominoes Non-Glow Set-01.png"/>
+                                <state key="normal" image="White Dominoes-10.png"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyJ-Ed-160">
                                 <rect key="frame" x="141" y="44" width="254" height="0.0"/>
@@ -413,9 +413,9 @@
                                 <state key="normal" image="Aqua Dominoes Non-Glow Set-06.png"/>
                             </button>
                             <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OlL-E9-iph" userLabel="Pink">
-                                <rect key="frame" x="252" y="522" width="122" height="202"/>
+                                <rect key="frame" x="253" y="522" width="122" height="202"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Aqua Dominoes Non-Glow Set-01.png"/>
+                                <state key="normal" image="Pink Dominoes-09.png"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ot6-ZT-J5N"/>
@@ -508,18 +508,19 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Aqua Dominoes Non-Glow Set-01.png" width="121.19999694824219" height="202.08000183105469"/>
         <image name="Aqua Dominoes Non-Glow Set-06.png" width="121.19999694824219" height="202.08000183105469"/>
         <image name="Forest Green Dominoes Non-Glow Set-05.png" width="121" height="202.08000183105469"/>
         <image name="Lime Green Dominos Non-Glow Set-04.png" width="121.19999694824219" height="202.08000183105469"/>
         <image name="Orange Dominos-02.png" width="121.19999694824219" height="202.08000183105469"/>
-        <image name="Pink.png" width="108.23999786376953" height="171.83999633789062"/>
-        <image name="Purple.png" width="108.23999786376953" height="171.83999633789062"/>
+        <image name="Pink Dominoes Non-Glow Set-09.png" width="121.19999694824219" height="202.08000183105469"/>
+        <image name="Pink Dominoes-09.png" width="121.19999694824219" height="202.08000183105469"/>
+        <image name="Purple Dominoes Non-Glow Set-08.png" width="121.19999694824219" height="202.08000183105469"/>
         <image name="Red Dominos Non-Glow Set-01.png" width="121.19999694824219" height="202.08000183105469"/>
         <image name="Royal Blue Dominoes Non-Glow Set-07.png" width="121.19999694824219" height="202.08000183105469"/>
         <image name="Settings.png" width="90" height="87"/>
         <image name="The Domino Effect Logo-02.png" width="208.08000183105469" height="196.32000732421875"/>
-        <image name="White.png" width="108.23999786376953" height="171.83999633789062"/>
+        <image name="White Dominoes Non-Glow Set-010.png" width="121" height="202.08000183105469"/>
+        <image name="White Dominoes-10.png" width="121" height="202.08000183105469"/>
         <image name="Yellow Dominos Non-Glow Set-03.png" width="121.19999694824219" height="202.08000183105469"/>
         <image name="arrow.png" width="90" height="87"/>
         <image name="help.png" width="90" height="87"/>

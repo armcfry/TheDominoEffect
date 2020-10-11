@@ -84,22 +84,22 @@ class NumberMenuViewController: UIViewController{
                 button.setImage(UIImage(named: thisBImage), for: .normal)
             }
         case 7:
-            let imgName = "Purple Dominos Non-Glow Set-0"
+            let imgName = "Purple Dominoes Non-Glow Set-0"
             for button in dominoCollection{
                 let thisBImage = "\(imgName)\(button.tag).png"
-                button.setImage(UIImage(named: "Purple.png"), for: .normal)
+                button.setImage(UIImage(named: thisBImage), for: .normal)
             }
         case 8:
-            let imgName = "Pink Dominos Non-Glow Set-0"
+            let imgName = "Pink Dominoes Non-Glow Set-0"
             for button in dominoCollection{
                 let thisBImage = "\(imgName)\(button.tag).png"
-                button.setImage(UIImage(named: "Pink.png"), for: .normal)
+                button.setImage(UIImage(named: thisBImage), for: .normal)
             }
         case 9:
-            let imgName = "White Dominos Non-Glow Set-0"
+            let imgName = "White Dominoes Non-Glow Set-0"
             for button in dominoCollection{
                 let thisBImage = "\(imgName)\(button.tag).png"
-                button.setImage(UIImage(named: "White.png"), for: .normal)
+                button.setImage(UIImage(named: thisBImage), for: .normal)
             }
         default:
             print("default")
