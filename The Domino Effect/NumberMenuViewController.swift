@@ -51,7 +51,7 @@ class NumberMenuViewController: UIViewController{
             let imgName = "Orange Dominos Non-Glow Set-0"
             for button in dominoCollection{
                 let thisBImage = "\(imgName)\(button.tag).png"
-                button.setImage(UIImage(named: "Orange.png"), for: .normal)
+                button.setImage(UIImage(named: thisBImage), for: .normal)
             }
         case 2:
             let imgName = "Yellow Dominos Non-Glow Set-0"

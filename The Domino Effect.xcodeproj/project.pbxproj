@@ -105,16 +105,16 @@
 		678048D42532B08500F443DB /* White Dominoes-07.png in Resources */ = {isa = PBXBuildFile; fileRef = 678048982532B08400F443DB /* White Dominoes-07.png */; };
 		678048D52532B08500F443DB /* White Dominoes-09.png in Resources */ = {isa = PBXBuildFile; fileRef = 678048992532B08400F443DB /* White Dominoes-09.png */; };
 		678048D62532B08500F443DB /* White Dominoes-08.png in Resources */ = {isa = PBXBuildFile; fileRef = 6780489A2532B08400F443DB /* White Dominoes-08.png */; };
-		67E384B92517E3AD00296DCE /* LimeGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 67E384AF2517E3AC00296DCE /* LimeGreen.png */; };
-		67E384BA2517E3AD00296DCE /* Orange.png in Resources */ = {isa = PBXBuildFile; fileRef = 67E384B02517E3AC00296DCE /* Orange.png */; };
-		67E384BB2517E3AD00296DCE /* Yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 67E384B12517E3AC00296DCE /* Yellow.png */; };
-		67E384BC2517E3AD00296DCE /* Pink.png in Resources */ = {isa = PBXBuildFile; fileRef = 67E384B22517E3AC00296DCE /* Pink.png */; };
-		67E384BD2517E3AD00296DCE /* Blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 67E384B32517E3AC00296DCE /* Blue.png */; };
-		67E384BE2517E3AD00296DCE /* Red.png in Resources */ = {isa = PBXBuildFile; fileRef = 67E384B42517E3AC00296DCE /* Red.png */; };
-		67E384BF2517E3AD00296DCE /* Purple.png in Resources */ = {isa = PBXBuildFile; fileRef = 67E384B52517E3AC00296DCE /* Purple.png */; };
-		67E384C02517E3AD00296DCE /* Green.png in Resources */ = {isa = PBXBuildFile; fileRef = 67E384B62517E3AD00296DCE /* Green.png */; };
-		67E384C12517E3AD00296DCE /* White.png in Resources */ = {isa = PBXBuildFile; fileRef = 67E384B72517E3AD00296DCE /* White.png */; };
-		67E384C22517E3AD00296DCE /* Turquoise.png in Resources */ = {isa = PBXBuildFile; fileRef = 67E384B82517E3AD00296DCE /* Turquoise.png */; };
+		67C7085F253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-08.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C70855253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-08.png */; };
+		67C70860253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-09.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C70856253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-09.png */; };
+		67C70861253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-10.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C70857253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-10.png */; };
+		67C70862253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-04.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C70858253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-04.png */; };
+		67C70863253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-05.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C70859253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-05.png */; };
+		67C70864253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-07.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C7085A253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-07.png */; };
+		67C70865253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-06.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C7085B253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-06.png */; };
+		67C70866253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-02.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C7085C253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-02.png */; };
+		67C70867253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-03.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C7085D253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-03.png */; };
+		67C70868253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C7085E253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-01.png */; };
 		67E384C42519720F00296DCE /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E384C32519720F00296DCE /* HelpViewController.swift */; };
 		67E384C6251BA64400296DCE /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E384C5251BA64400296DCE /* SoundManager.swift */; };
 		67E384C9251BA66B00296DCE /* TDE_V2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 67E384C8251BA66B00296DCE /* TDE_V2.m4a */; };
@@ -334,16 +334,16 @@
 		678048982532B08400F443DB /* White Dominoes-07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "White Dominoes-07.png"; sourceTree = "<group>"; };
 		678048992532B08400F443DB /* White Dominoes-09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "White Dominoes-09.png"; sourceTree = "<group>"; };
 		6780489A2532B08400F443DB /* White Dominoes-08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "White Dominoes-08.png"; sourceTree = "<group>"; };
-		67E384AF2517E3AC00296DCE /* LimeGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LimeGreen.png; sourceTree = "<group>"; };
-		67E384B02517E3AC00296DCE /* Orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Orange.png; sourceTree = "<group>"; };
-		67E384B12517E3AC00296DCE /* Yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Yellow.png; sourceTree = "<group>"; };
-		67E384B22517E3AC00296DCE /* Pink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pink.png; sourceTree = "<group>"; };
-		67E384B32517E3AC00296DCE /* Blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blue.png; sourceTree = "<group>"; };
-		67E384B42517E3AC00296DCE /* Red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Red.png; sourceTree = "<group>"; };
-		67E384B52517E3AC00296DCE /* Purple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Purple.png; sourceTree = "<group>"; };
-		67E384B62517E3AD00296DCE /* Green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Green.png; sourceTree = "<group>"; };
-		67E384B72517E3AD00296DCE /* White.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = White.png; sourceTree = "<group>"; };
-		67E384B82517E3AD00296DCE /* Turquoise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Turquoise.png; sourceTree = "<group>"; };
+		67C70855253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Orange Dominos Non-Glow Set-08.png"; sourceTree = "<group>"; };
+		67C70856253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Orange Dominos Non-Glow Set-09.png"; sourceTree = "<group>"; };
+		67C70857253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Orange Dominos Non-Glow Set-10.png"; sourceTree = "<group>"; };
+		67C70858253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Orange Dominos Non-Glow Set-04.png"; sourceTree = "<group>"; };
+		67C70859253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Orange Dominos Non-Glow Set-05.png"; sourceTree = "<group>"; };
+		67C7085A253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Orange Dominos Non-Glow Set-07.png"; sourceTree = "<group>"; };
+		67C7085B253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Orange Dominos Non-Glow Set-06.png"; sourceTree = "<group>"; };
+		67C7085C253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Orange Dominos Non-Glow Set-02.png"; sourceTree = "<group>"; };
+		67C7085D253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Orange Dominos Non-Glow Set-03.png"; sourceTree = "<group>"; };
+		67C7085E253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Orange Dominos Non-Glow Set-01.png"; sourceTree = "<group>"; };
 		67E384C32519720F00296DCE /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		67E384C5251BA64400296DCE /* SoundManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		67E384C8251BA66B00296DCE /* TDE_V2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = TDE_V2.m4a; sourceTree = "<group>"; };
@@ -701,6 +701,23 @@
 			path = "Glow Set";
 			sourceTree = "<group>";
 		};
+		67C70854253D29DB00AA26A7 /* Non-Glow Set */ = {
+			isa = PBXGroup;
+			children = (
+				67C7085E253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-01.png */,
+				67C7085C253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-02.png */,
+				67C7085D253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-03.png */,
+				67C70858253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-04.png */,
+				67C70859253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-05.png */,
+				67C7085B253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-06.png */,
+				67C7085A253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-07.png */,
+				67C70855253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-08.png */,
+				67C70856253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-09.png */,
+				67C70857253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-10.png */,
+			);
+			path = "Non-Glow Set";
+			sourceTree = "<group>";
+		};
 		67E384AE2517E38900296DCE /* Dominoes */ = {
 			isa = PBXGroup;
 			children = (
@@ -714,16 +731,6 @@
 				6780486D2532B08400F443DB /* (8) Purple Set */,
 				678048562532B08400F443DB /* (9) Pink Set */,
 				678048842532B08400F443DB /* (0) White Set */,
-				67E384B32517E3AC00296DCE /* Blue.png */,
-				67E384B62517E3AD00296DCE /* Green.png */,
-				67E384AF2517E3AC00296DCE /* LimeGreen.png */,
-				67E384B02517E3AC00296DCE /* Orange.png */,
-				67E384B22517E3AC00296DCE /* Pink.png */,
-				67E384B52517E3AC00296DCE /* Purple.png */,
-				67E384B42517E3AC00296DCE /* Red.png */,
-				67E384B82517E3AD00296DCE /* Turquoise.png */,
-				67E384B72517E3AD00296DCE /* White.png */,
-				67E384B12517E3AC00296DCE /* Yellow.png */,
 			);
 			path = Dominoes;
 			sourceTree = "<group>";
@@ -784,6 +791,7 @@
 			isa = PBXGroup;
 			children = (
 				67EC40912532312D007C2B0B /* Glow Set */,
+				67C70854253D29DB00AA26A7 /* Non-Glow Set */,
 			);
 			path = "(2) Orange Set";
 			sourceTree = "<group>";
@@ -1039,6 +1047,7 @@
 				67EC412F2532355A007C2B0B /* Lime Green Dominos Non-Glow Set-02.png in Resources */,
 				67EC41512532355A007C2B0B /* Aqua Dominoes-07.png in Resources */,
 				67EC407A253230EF007C2B0B /* Red Dominos-08.png in Resources */,
+				67C70864253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-07.png in Resources */,
 				67EC408D253230EF007C2B0B /* Red Dominos Non-Glow Set-09.png in Resources */,
 				67EC41592532355A007C2B0B /* Yellow Dominos Non-Glow Set-04.png in Resources */,
 				67EC4087253230EF007C2B0B /* Red Dominos Non-Glow Set-010.png in Resources */,
@@ -1046,7 +1055,6 @@
 				67EC41132532355A007C2B0B /* Forest Green Dominoes Non-Glow Set-05.png in Resources */,
 				67EC415B2532355A007C2B0B /* Yellow Dominos Non-Glow Set-03.png in Resources */,
 				677BFA62250E725B00C3CB15 /* The Domino Effect Logo-02.png in Resources */,
-				67E384C02517E3AD00296DCE /* Green.png in Resources */,
 				6780484025323F5000F443DB /* Royal Blue Dominoes Non-Glow Set-010.png in Resources */,
 				6780484425323F5000F443DB /* Royal Blue Dominoes Non-Glow Set-02.png in Resources */,
 				67EC41622532355A007C2B0B /* Yellow Dominos-10.png in Resources */,
@@ -1054,7 +1062,6 @@
 				678048A12532B08400F443DB /* Pink Dominoes Non-Glow Set-04.png in Resources */,
 				67EC41112532355A007C2B0B /* Forest Green Dominoes Non-Glow Set-010.png in Resources */,
 				67E384C9251BA66B00296DCE /* TDE_V2.m4a in Resources */,
-				67E384C12517E3AD00296DCE /* White.png in Resources */,
 				67EC407F253230EF007C2B0B /* Red Dominos-07.png in Resources */,
 				678048BC2532B08500F443DB /* Purple Dominoes-10.png in Resources */,
 				67EC41432532355A007C2B0B /* Aqua Dominoes Non-Glow Set-04.png in Resources */,
@@ -1071,6 +1078,7 @@
 				678048CA2532B08500F443DB /* White Dominoes Non-Glow Set-06.png in Resources */,
 				678048B72532B08500F443DB /* Purple Dominoes Non-Glow Set-03.png in Resources */,
 				67EC413A2532355A007C2B0B /* Lime Green Dominos-07.png in Resources */,
+				67C70860253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-09.png in Resources */,
 				67EC40A52532312D007C2B0B /* Orange Dominos-09.png in Resources */,
 				6780484725323F5000F443DB /* Royal Blue Dominoes Non-Glow Set-09.png in Resources */,
 				67EC415C2532355A007C2B0B /* Yellow Dominos Non-Glow Set-02.png in Resources */,
@@ -1083,15 +1091,16 @@
 				678048D32532B08500F443DB /* White Dominoes-06.png in Resources */,
 				6780484825323F5000F443DB /* Royal Blue Dominoes-08.png in Resources */,
 				67EC410F2532355A007C2B0B /* Forest Green Dominoes Non-Glow Set-07.png in Resources */,
-				67E384BF2517E3AD00296DCE /* Purple.png in Resources */,
 				678048D22532B08500F443DB /* White Dominoes-10.png in Resources */,
 				678048A52532B08400F443DB /* Pink Dominoes-03.png in Resources */,
 				67EC41602532355A007C2B0B /* Yellow Dominos-07.png in Resources */,
 				678048D62532B08500F443DB /* White Dominoes-08.png in Resources */,
+				67C70868253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-01.png in Resources */,
 				6780484B25323F5000F443DB /* Royal Blue Dominoes-02.png in Resources */,
 				67EC41492532355A007C2B0B /* Aqua Dominoes-08.png in Resources */,
 				678048C02532B08500F443DB /* Purple Dominoes-03.png in Resources */,
 				67EC41542532355A007C2B0B /* Yellow Dominos Non-Glow Set-08.png in Resources */,
+				67C70862253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-04.png in Resources */,
 				67EC40A32532312D007C2B0B /* Orange Dominos-01.png in Resources */,
 				67EC4081253230EF007C2B0B /* Red Dominos-02.png in Resources */,
 				67EC41452532355A007C2B0B /* Aqua Dominoes Non-Glow Set-07.png in Resources */,
@@ -1111,7 +1120,6 @@
 				67E384D2251BDB3100296DCE /* Select_V1.m4a in Resources */,
 				677BFA5D250E68AC00C3CB15 /* sound.png in Resources */,
 				678048AE2532B08500F443DB /* Pink Dominoes-08.png in Resources */,
-				67E384BE2517E3AD00296DCE /* Red.png in Resources */,
 				678048A02532B08400F443DB /* Pink Dominoes Non-Glow Set-05.png in Resources */,
 				67EC41372532355A007C2B0B /* Lime Green Dominos-04.png in Resources */,
 				67EC41122532355A007C2B0B /* Forest Green Dominoes Non-Glow Set-04.png in Resources */,
@@ -1136,7 +1144,6 @@
 				67EC41252532355A007C2B0B /* Lime Green Dominos Non-Glow Set-08.png in Resources */,
 				678048CB2532B08500F443DB /* White Dominoes Non-Glow Set-04.png in Resources */,
 				67EC4088253230EF007C2B0B /* Red Dominos Non-Glow Set-04.png in Resources */,
-				67E384BA2517E3AD00296DCE /* Orange.png in Resources */,
 				6780484C25323F5000F443DB /* Royal Blue Dominoes-03.png in Resources */,
 				67EC41632532355A007C2B0B /* Yellow Dominos-04.png in Resources */,
 				6780484225323F5000F443DB /* Royal Blue Dominoes Non-Glow Set-05.png in Resources */,
@@ -1183,8 +1190,8 @@
 				678048D42532B08500F443DB /* White Dominoes-07.png in Resources */,
 				678048C32532B08500F443DB /* White Dominoes Non-Glow Set-08.png in Resources */,
 				678048A72532B08400F443DB /* Pink Dominoes-01.png in Resources */,
-				67E384BB2517E3AD00296DCE /* Yellow.png in Resources */,
 				678048CD2532B08500F443DB /* White Dominoes-03.png in Resources */,
+				67C70861253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-10.png in Resources */,
 				67EC410D2532355A007C2B0B /* Forest Green Dominoes Non-Glow Set-08.png in Resources */,
 				67EC41482532355A007C2B0B /* Aqua Dominoes Non-Glow Set-01.png in Resources */,
 				67EC40A12532312D007C2B0B /* Orange Dominos-02.png in Resources */,
@@ -1194,20 +1201,18 @@
 				67EC40A02532312D007C2B0B /* Orange Dominos-06.png in Resources */,
 				67EC409F2532312D007C2B0B /* Orange Dominos-07.png in Resources */,
 				677BFA64250E73AD00C3CB15 /* start.png in Resources */,
+				67C70865253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-06.png in Resources */,
 				67EC41302532355A007C2B0B /* Lime Green Dominos Non-Glow Set-03.png in Resources */,
 				67EC408B253230EF007C2B0B /* Red Dominos Non-Glow Set-06.png in Resources */,
 				67EC413D2532355A007C2B0B /* Lime Green Dominos-03.png in Resources */,
 				67EC414C2532355A007C2B0B /* Aqua Dominoes-03.png in Resources */,
 				678048C52532B08500F443DB /* White Dominoes Non-Glow Set-010.png in Resources */,
-				67E384B92517E3AD00296DCE /* LimeGreen.png in Resources */,
 				67EC41572532355A007C2B0B /* Yellow Dominos Non-Glow Set-05.png in Resources */,
-				67E384BD2517E3AD00296DCE /* Blue.png in Resources */,
 				6780484325323F5000F443DB /* Royal Blue Dominoes Non-Glow Set-01.png in Resources */,
 				67EC413C2532355A007C2B0B /* Lime Green Dominos-02.png in Resources */,
 				678048C62532B08500F443DB /* White Dominoes Non-Glow Set-01.png in Resources */,
 				67EC41552532355A007C2B0B /* Yellow Dominos Non-Glow Set-06.png in Resources */,
 				67EC413B2532355A007C2B0B /* Lime Green Dominos-06.png in Resources */,
-				67E384C22517E3AD00296DCE /* Turquoise.png in Resources */,
 				67EC41312532355A007C2B0B /* Lime Green Dominos Non-Glow Set-01.png in Resources */,
 				67EC411A2532355A007C2B0B /* Forest Green Dominoes-07.png in Resources */,
 				6780484F25323F5000F443DB /* Royal Blue Dominoes-04.png in Resources */,
@@ -1221,8 +1226,10 @@
 				678048AC2532B08400F443DB /* Pink Dominoes-07.png in Resources */,
 				67EC407B253230EF007C2B0B /* Red Dominos-09.png in Resources */,
 				678048BE2532B08500F443DB /* Purple Dominoes-06.png in Resources */,
+				67C70863253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-05.png in Resources */,
 				678048C82532B08500F443DB /* White Dominoes Non-Glow Set-03.png in Resources */,
 				67EC41392532355A007C2B0B /* Lime Green Dominos-05.png in Resources */,
+				67C70866253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-02.png in Resources */,
 				6776A03F24E1B0A100D5C5C1 /* Main.storyboard in Resources */,
 				67EC40A22532312D007C2B0B /* Orange Dominos-03.png in Resources */,
 				67EC40A42532312D007C2B0B /* Orange Dominos-08.png in Resources */,
@@ -1233,13 +1240,14 @@
 				67EC4086253230EF007C2B0B /* Red Dominos Non-Glow Set-01.png in Resources */,
 				678048AF2532B08500F443DB /* Purple Dominoes Non-Glow Set-08.png in Resources */,
 				67EC41162532355A007C2B0B /* Forest Green Dominoes Non-Glow Set-03.png in Resources */,
+				67C70867253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-03.png in Resources */,
+				67C7085F253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-08.png in Resources */,
 				678048CE2532B08500F443DB /* White Dominoes-02.png in Resources */,
 				67EC4082253230EF007C2B0B /* Red Dominos-03.png in Resources */,
 				67EC41402532355A007C2B0B /* Aqua Dominoes Non-Glow Set-08.png in Resources */,
 				67EC412E2532355A007C2B0B /* Lime Green Dominos Non-Glow Set-06.png in Resources */,
 				6780484E25323F5000F443DB /* Royal Blue Dominoes-06.png in Resources */,
 				678048B52532B08500F443DB /* Purple Dominoes Non-Glow Set-06.png in Resources */,
-				67E384BC2517E3AD00296DCE /* Pink.png in Resources */,
 				67EC407D253230EF007C2B0B /* Red Dominos-10.png in Resources */,
 				67EC41142532355A007C2B0B /* Forest Green Dominoes Non-Glow Set-01.png in Resources */,
 				678048AA2532B08400F443DB /* Pink Dominoes-04.png in Resources */,
