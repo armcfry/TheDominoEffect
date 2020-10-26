@@ -28,6 +28,27 @@ class NumberMenuViewController: UIViewController{
 
     var numberToShow = 0
     
+    @IBAction func selectDomino(sender: UIButton) {
+
+        DominoManager.shared.selectDomino(head: numberToShow, tail: sender.tag-1)
+        if DominoManager.shared.dominos[numberToShow][sender.tag-1].isSelected == true {
+            sender.layer.opacity -= 0.5;
+        }
+        else{
+            sender.layer.opacity += 0.5;
+        }
+    }
+    
+    func setButtons (imageName: String){
+        for button in dominoCollection{
+            let thisBImage = "\(imageName)\(button.tag).png"
+            button.setImage(UIImage(named: thisBImage), for: .normal)
+            if DominoManager.shared.dominos[numberToShow][button.tag-1].isSelected == true {
+                button.layer.opacity -= 0.5;
+            }
+        }
+    }
+    
     // go back to the previous screen
     @IBAction func backSelect(_ sender: UIButton) {
         performSegue(withIdentifier: "unwind", sender: self)
@@ -42,65 +63,25 @@ class NumberMenuViewController: UIViewController{
         // change the outfit for the buttons
         switch numberToShow {
         case 0:
-            let imgName = "Red Dominos Non-Glow Set-0"
-            for button in dominoCollection{
-                let thisBImage = "\(imgName)\(button.tag).png"
-                button.setImage(UIImage(named: thisBImage), for: .normal)
-            }
+            setButtons(imageName: "Red Dominos Non-Glow Set-0")
         case 1:
-            let imgName = "Orange Dominos Non-Glow Set-0"
-            for button in dominoCollection{
-                let thisBImage = "\(imgName)\(button.tag).png"
-                button.setImage(UIImage(named: thisBImage), for: .normal)
-            }
+            setButtons(imageName: "Orange Dominos Non-Glow Set-0")
         case 2:
-            let imgName = "Yellow Dominos Non-Glow Set-0"
-            for button in dominoCollection{
-                let thisBImage = "\(imgName)\(button.tag).png"
-                button.setImage(UIImage(named: thisBImage), for: .normal)
-            }
+            setButtons(imageName: "Yellow Dominos Non-Glow Set-0")
         case 3:
-            let imgName = "Lime Green Dominos Non-Glow Set-0"
-            for button in dominoCollection{
-                let thisBImage = "\(imgName)\(button.tag).png"
-                button.setImage(UIImage(named: thisBImage), for: .normal)
-            }
+            setButtons(imageName: "Lime Green Dominos Non-Glow Set-0")
         case 4:
-            let imgName = "Forest Green Dominoes Non-Glow Set-0"
-            for button in dominoCollection{
-                let thisBImage = "\(imgName)\(button.tag).png"
-                button.setImage(UIImage(named: thisBImage), for: .normal)
-            }
+            setButtons(imageName: "Forest Green Dominoes Non-Glow Set-0")
         case 5:
-            let imgName = "Aqua Dominoes Non-Glow Set-0"
-            for button in dominoCollection{
-                let thisBImage = "\(imgName)\(button.tag).png"
-                button.setImage(UIImage(named: thisBImage), for: .normal)
-            }
+            setButtons(imageName: "Aqua Dominoes Non-Glow Set-0")
         case 6:
-            let imgName = "Royal Blue Dominoes Non-Glow Set-0"
-            for button in dominoCollection{
-                let thisBImage = "\(imgName)\(button.tag).png"
-                button.setImage(UIImage(named: thisBImage), for: .normal)
-            }
+            setButtons(imageName: "Royal Blue Dominoes Non-Glow Set-0")
         case 7:
-            let imgName = "Purple Dominoes Non-Glow Set-0"
-            for button in dominoCollection{
-                let thisBImage = "\(imgName)\(button.tag).png"
-                button.setImage(UIImage(named: thisBImage), for: .normal)
-            }
+            setButtons(imageName: "Purple Dominoes Non-Glow Set-0")
         case 8:
-            let imgName = "Pink Dominoes Non-Glow Set-0"
-            for button in dominoCollection{
-                let thisBImage = "\(imgName)\(button.tag).png"
-                button.setImage(UIImage(named: thisBImage), for: .normal)
-            }
+            setButtons(imageName: "Pink Dominoes Non-Glow Set-0")
         case 9:
-            let imgName = "White Dominoes Non-Glow Set-0"
-            for button in dominoCollection{
-                let thisBImage = "\(imgName)\(button.tag).png"
-                button.setImage(UIImage(named: thisBImage), for: .normal)
-            }
+            setButtons(imageName: "White Dominoes Non-Glow Set-0")
         default:
             print("default")
         }

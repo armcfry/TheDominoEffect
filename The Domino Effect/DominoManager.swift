@@ -18,15 +18,37 @@ class DominoManager {
     // set up all dominos; will be called on reset so the user can sort again
     func initializeDominos()
     {
-        for _ in 0..<9 {
+        for x in 0...9 {
             var temp = [Domino]()
-            for _ in 0..<9 {
-                temp.append(Domino(head : 0,tail : 0, isSelected :false, imageName:""))
+            for y in 0...9 {
+                temp.append(Domino(head : x,tail : y, isSelected :false, imageName:""))
             }
-            dominos.append(temp)
+            if x == 0{
+                dominos[0] = temp
+            }
+            else{
+                dominos.append(temp)
+            }
+        }
+        print(dominos[7][1])
+    }
+    
+    // function to call when a domino is selected
+    func selectDomino(head: Int, tail: Int){
+        // if not selected, select
+        if(dominos[head][tail].isSelected == false){
+            dominos[head][tail].isSelected = true
+            dominos[tail][head].isSelected = true
+        }
+        // if selected, deselect
+        else{
+            dominos[head][tail].isSelected = false
+            dominos[tail][head].isSelected = false
         }
     }
+    
     //Initializer access level change now
     private init(){}
+    
     
 }
