@@ -86,9 +86,15 @@ class SelectorBaseViewController: UIViewController{
     
     @IBAction func moveToSort(_ sender: UIButton) {
         groupSelect = 11
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
-           self.performSegue(withIdentifier: "moveToSort", sender: self)
-        })
+        var filterResult = DominoManager.shared.filterDominos(dominos:DominoManager.shared.dominos)
+        if filterResult.count >= 2{
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
+               self.performSegue(withIdentifier: "moveToSort", sender: self)
+            })
+        }
+        else{
+            return
+        }
     }
     // gather information to send to the next VC
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){

@@ -23,6 +23,7 @@ class DominoManager {
             for y in 0...9 {
                 temp.append(Domino(head : x,tail : y, isSelected :false, imageName:""))
             }
+            
             if x == 0{
                 dominos[0] = temp
             }
@@ -30,7 +31,7 @@ class DominoManager {
                 dominos.append(temp)
             }
         }
-        print(dominos[7][1])
+        print(dominos)
     }
     
     // function to call when a domino is selected
@@ -45,6 +46,35 @@ class DominoManager {
             dominos[head][tail].isSelected = false
             dominos[tail][head].isSelected = false
         }
+    }
+    
+    func filterDominos(dominos:[[Domino]]) -> [Domino]{
+        var dominosFiltered:[Domino] = []
+        
+        // gather the dominos from the list of dominos and filter by only ones that are selected
+        for x in 0...9 {
+            for y in 0...9 {
+                if self.dominos[x][y].isSelected == true{
+                    // remove duplicates
+                    self.dominos[y][x].isSelected = false
+                    // avoid blank space in the array
+                    if dominos.count == 0{
+                        dominosFiltered[0] = dominos[x][y]
+                    }
+                    dominosFiltered.append(dominos[x][y])
+                }
+            }
+        }
+        print(dominosFiltered)
+        return dominosFiltered
+    }
+    
+    func sortDominos(dominos:[Domino]) -> [Domino]{
+        var dominosSorted:[Domino] = []
+        
+        
+        
+        return dominosSorted
     }
     
     //Initializer access level change now

@@ -30,21 +30,25 @@ class NumberMenuViewController: UIViewController{
     
     @IBAction func selectDomino(sender: UIButton) {
 
-        DominoManager.shared.selectDomino(head: numberToShow, tail: sender.tag-1)
-        if DominoManager.shared.dominos[numberToShow][sender.tag-1].isSelected == true {
+        DominoManager.shared.selectDomino(head: numberToShow, tail: sender.tag)
+        if DominoManager.shared.dominos[numberToShow][sender.tag].isSelected == true {
             sender.layer.opacity -= 0.5;
         }
         else{
             sender.layer.opacity += 0.5;
         }
+        print(DominoManager.shared.dominos)
     }
     
     func setButtons (imageName: String){
         for button in dominoCollection{
             let thisBImage = "\(imageName)\(button.tag).png"
             button.setImage(UIImage(named: thisBImage), for: .normal)
-            if DominoManager.shared.dominos[numberToShow][button.tag-1].isSelected == true {
-                button.layer.opacity -= 0.5;
+            if DominoManager.shared.dominos[numberToShow][button.tag].isSelected == true {
+                button.layer.opacity = 0.5
+            }
+            else{
+                button.layer.opacity = 1
             }
         }
     }
@@ -62,25 +66,25 @@ class NumberMenuViewController: UIViewController{
     {
         // change the outfit for the buttons
         switch numberToShow {
-        case 0:
-            setButtons(imageName: "Red Dominos Non-Glow Set-0")
         case 1:
-            setButtons(imageName: "Orange Dominos Non-Glow Set-0")
+            setButtons(imageName: "Red Dominos Non-Glow Set-0")
         case 2:
-            setButtons(imageName: "Yellow Dominos Non-Glow Set-0")
+            setButtons(imageName: "Orange Dominos Non-Glow Set-0")
         case 3:
-            setButtons(imageName: "Lime Green Dominos Non-Glow Set-0")
+            setButtons(imageName: "Yellow Dominos Non-Glow Set-0")
         case 4:
-            setButtons(imageName: "Forest Green Dominoes Non-Glow Set-0")
+            setButtons(imageName: "Lime Green Dominos Non-Glow Set-0")
         case 5:
-            setButtons(imageName: "Aqua Dominoes Non-Glow Set-0")
+            setButtons(imageName: "Forest Green Dominoes Non-Glow Set-0")
         case 6:
-            setButtons(imageName: "Royal Blue Dominoes Non-Glow Set-0")
+            setButtons(imageName: "Aqua Dominoes Non-Glow Set-0")
         case 7:
-            setButtons(imageName: "Purple Dominoes Non-Glow Set-0")
+            setButtons(imageName: "Royal Blue Dominoes Non-Glow Set-0")
         case 8:
-            setButtons(imageName: "Pink Dominoes Non-Glow Set-0")
+            setButtons(imageName: "Purple Dominoes Non-Glow Set-0")
         case 9:
+            setButtons(imageName: "Pink Dominoes Non-Glow Set-0")
+        case 0:
             setButtons(imageName: "White Dominoes Non-Glow Set-0")
         default:
             print("default")
