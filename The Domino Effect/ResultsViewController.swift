@@ -14,11 +14,11 @@ class ResultsViewController:UIViewController, UICollectionViewDelegate, UICollec
     var indexNum = 1
     @IBOutlet weak var resultCollectionView: UICollectionView!
     @IBAction func backSelect(_ sender: UIButton) {
+        DominoManager.shared.resetDominos()
         performSegue(withIdentifier: "unwind", sender: self)
     }
     
     @IBAction func unwindToSelectorBase(sender: UIStoryboardSegue){
-        DominoManager.shared.resetDominos()
     }
 
     override func viewWillAppear(_ animated: Bool) {

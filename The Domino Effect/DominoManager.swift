@@ -103,11 +103,10 @@ class DominoManager {
     }
     
     func resetDominos() {
-        
         //empty the arrays and make a fresh set of dominos
-        dominos = [[]]
-        dominosFiltered = []
-        dominosSorted = []
+        self.dominos = [[]]
+        self.dominosFiltered = []
+        self.dominosSorted = []
         self.initializeDominos()
     }
     
