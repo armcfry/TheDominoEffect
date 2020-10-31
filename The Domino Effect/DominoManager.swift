@@ -12,6 +12,8 @@ class DominoManager {
     
     //2D array of dominos to keep up with the selection status of each domino
     var dominos:[[Domino]] = [[]]
+    var dominosFiltered:[Domino] = []
+    var dominosSorted:[Domino] = []
         
     static let shared = DominoManager()
     
@@ -21,7 +23,30 @@ class DominoManager {
         for x in 0...9 {
             var temp = [Domino]()
             for y in 0...9 {
-                temp.append(Domino(head : x,tail : y, isSelected :false, imageName:""))
+                switch x {
+                case 1:
+                    temp.append(Domino(head : x,tail : y, isSelected :false, clicked :false, imageName:"Red Dominos Non-Glow Set-0" + String(y)))
+                case 2:
+                    temp.append(Domino(head : x,tail : y, isSelected :false, clicked :false, imageName:"Orange Dominos Non-Glow Set-0" + String(y)))
+                case 3:
+                    temp.append(Domino(head : x,tail : y, isSelected :false, clicked :false, imageName:"Yellow Dominos Non-Glow Set-0" + String(y)))
+                case 4:
+                    temp.append(Domino(head : x,tail : y, isSelected :false, clicked :false, imageName:"Lime Green Dominos Non-Glow Set-0" + String(y)))
+                case 5:
+                    temp.append(Domino(head : x,tail : y, isSelected :false, clicked :false, imageName:"Forest Green Dominos Non-Glow Set-0" + String(y)))
+                case 6:
+                    temp.append(Domino(head : x,tail : y, isSelected :false, clicked :false, imageName:"Aqua Dominos Non-Glow Set-0" + String(y)))
+                case 7:
+                    temp.append(Domino(head : x,tail : y, isSelected :false, clicked :false, imageName:"Royal Blue Dominos Non-Glow Set-0" + String(y)))
+                case 8:
+                    temp.append(Domino(head : x,tail : y, isSelected :false, clicked :false, imageName:"Purple Dominos Non-Glow Set-0" + String(y)))
+                case 9:
+                    temp.append(Domino(head : x,tail : y, isSelected :false, clicked :false, imageName:"Pink Dominos Non-Glow Set-0" + String(y)))
+                case 0:
+                    temp.append(Domino(head : x,tail : y, isSelected :false, clicked :false, imageName:"White Dominos Non-Glow Set-0" + String(y)))
+                default:
+                    print("default")
+                }
             }
             
             if x == 0{
@@ -38,25 +63,26 @@ class DominoManager {
     func selectDomino(head: Int, tail: Int){
         // if not selected, select
         if(dominos[head][tail].isSelected == false){
+            dominos[head][tail].clicked = true
             dominos[head][tail].isSelected = true
             dominos[tail][head].isSelected = true
         }
         // if selected, deselect
         else{
+            dominos[head][tail].clicked = false
+            dominos[tail][head].clicked = false
             dominos[head][tail].isSelected = false
             dominos[tail][head].isSelected = false
         }
     }
     
     func filterDominos(dominos:[[Domino]]) -> [Domino]{
-        var dominosFiltered:[Domino] = []
         
         // gather the dominos from the list of dominos and filter by only ones that are selected
+
         for x in 0...9 {
             for y in 0...9 {
-                if self.dominos[x][y].isSelected == true{
-                    // remove duplicates
-                    self.dominos[y][x].isSelected = false
+                if self.dominos[x][y].clicked == true{
                     // avoid blank space in the array
                     if dominos.count == 0{
                         dominosFiltered[0] = dominos[x][y]
@@ -70,11 +96,19 @@ class DominoManager {
     }
     
     func sortDominos(dominos:[Domino]) -> [Domino]{
-        var dominosSorted:[Domino] = []
         
         
         
         return dominosSorted
+    }
+    
+    func resetDominos() {
+        
+        //empty the arrays and make a fresh set of dominos
+        dominos = [[]]
+        dominosFiltered = []
+        dominosSorted = []
+        self.initializeDominos()
     }
     
     //Initializer access level change now

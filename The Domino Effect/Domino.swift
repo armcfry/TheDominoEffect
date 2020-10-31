@@ -12,6 +12,7 @@ struct Domino {
     var head:Int
     var tail:Int
     var isSelected:Bool
+    var clicked:Bool
     var imageName:String
 }
 

@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -151,9 +152,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2if-Lu-k6S" userLabel="Green">
-                                <rect key="frame" x="139" y="342" width="121" height="202"/>
+                                <rect key="frame" x="139" y="342" width="122" height="202"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Forest Green Dominoes Non-Glow Set-05.png"/>
+                                <state key="normal" image="Forest Green Dominos Non-Glow Set-05.png"/>
                                 <connections>
                                     <action selector="moveToFive:" destination="4hq-cB-7h8" eventType="touchUpInside" id="Kj3-9f-r64"/>
                                 </connections>
@@ -161,7 +162,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L25-JW-9p4" userLabel="Blue">
                                 <rect key="frame" x="14" y="522" width="122" height="202"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Royal Blue Dominoes Non-Glow Set-07.png"/>
+                                <state key="normal" image="Royal Blue Dominos Non-Glow Set-07.png"/>
                                 <connections>
                                     <action selector="moveToSeven:" destination="4hq-cB-7h8" eventType="touchUpInside" id="MIn-3J-mRz"/>
                                 </connections>
@@ -169,15 +170,15 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rko-j7-QIJ" userLabel="Purple">
                                 <rect key="frame" x="135" y="522" width="122" height="202"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Purple Dominoes Non-Glow Set-08.png"/>
+                                <state key="normal" image="Purple Dominos Non-Glow Set-08.png"/>
                                 <connections>
                                     <action selector="moveToEight:" destination="4hq-cB-7h8" eventType="touchUpInside" id="Cyf-0r-lcr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j0B-xL-Jan" userLabel="White">
-                                <rect key="frame" x="14" y="702" width="121" height="202"/>
+                                <rect key="frame" x="14" y="702" width="122" height="202"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="White Dominoes Non-Glow Set-00.png"/>
+                                <state key="normal" image="White Dominos Non-Glow Set-00.png"/>
                                 <connections>
                                     <action selector="moveToZero:" destination="4hq-cB-7h8" eventType="touchUpInside" id="DA1-BT-NvX"/>
                                 </connections>
@@ -199,7 +200,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcG-Zt-tBf" userLabel="Turquoise">
                                 <rect key="frame" x="256" y="342" width="122" height="202"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Aqua Dominoes Non-Glow Set-06.png"/>
+                                <state key="normal" image="Aqua Dominos Non-Glow Set-06.png"/>
                                 <connections>
                                     <action selector="moveToSix:" destination="4hq-cB-7h8" eventType="touchUpInside" id="6CC-In-WFr"/>
                                 </connections>
@@ -207,7 +208,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5FP-Tc-nCT" userLabel="Pink">
                                 <rect key="frame" x="252" y="522" width="122" height="202"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Pink Dominoes Non-Glow Set-09.png"/>
+                                <state key="normal" image="Pink Dominos Non-Glow Set-09.png"/>
                                 <connections>
                                     <action selector="moveToNine:" destination="4hq-cB-7h8" eventType="touchUpInside" id="uMk-Dm-LV5"/>
                                 </connections>
@@ -388,7 +389,7 @@
                             <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZl-7H-lgi" userLabel="Green">
                                 <rect key="frame" x="139" y="342" width="121" height="202"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Forest Green Dominoes Non-Glow Set-05.png"/>
+                                <state key="normal" image="Forest Green Dominos Non-Glow Set-05.png"/>
                                 <connections>
                                     <action selector="selectDominoWithSender:" destination="Jf6-xk-giz" eventType="touchUpInside" id="SGf-EK-agp"/>
                                 </connections>
@@ -396,7 +397,7 @@
                             <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FWs-4d-DsC" userLabel="Blue">
                                 <rect key="frame" x="14" y="522" width="122" height="202"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Royal Blue Dominoes Non-Glow Set-07.png"/>
+                                <state key="normal" image="Royal Blue Dominos Non-Glow Set-07.png"/>
                                 <connections>
                                     <action selector="selectDominoWithSender:" destination="Jf6-xk-giz" eventType="touchUpInside" id="F4g-0B-1Pe"/>
                                 </connections>
@@ -404,7 +405,7 @@
                             <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="reI-iK-lNv" userLabel="Purple">
                                 <rect key="frame" x="135" y="522" width="122" height="202"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Purple Dominoes Non-Glow Set-08.png"/>
+                                <state key="normal" image="Purple Dominos Non-Glow Set-08.png"/>
                                 <connections>
                                     <action selector="selectDominoWithSender:" destination="Jf6-xk-giz" eventType="touchUpInside" id="Gm1-ew-q3Y"/>
                                 </connections>
@@ -412,7 +413,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wD3-FG-fsv" userLabel="White">
                                 <rect key="frame" x="15" y="702" width="121" height="202"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="White Dominoes Non-Glow Set-010.png"/>
+                                <state key="normal" image="White Dominos Non-Glow Set-00.png"/>
                                 <connections>
                                     <action selector="selectDominoWithSender:" destination="Jf6-xk-giz" eventType="touchUpInside" id="gy0-hv-oI3"/>
                                 </connections>
@@ -434,7 +435,7 @@
                             <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksK-hJ-boY" userLabel="Turquoise">
                                 <rect key="frame" x="256" y="342" width="122" height="202"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Aqua Dominoes Non-Glow Set-06.png"/>
+                                <state key="normal" image="Aqua Dominos Non-Glow Set-06.png"/>
                                 <connections>
                                     <action selector="selectDominoWithSender:" destination="Jf6-xk-giz" eventType="touchUpInside" id="seE-od-ox5"/>
                                 </connections>
@@ -442,7 +443,7 @@
                             <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OlL-E9-iph" userLabel="Pink">
                                 <rect key="frame" x="253" y="522" width="122" height="202"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Pink Dominoes Non-Glow Set-09.png"/>
+                                <state key="normal" image="Pink Dominos Non-Glow Set-09.png"/>
                                 <connections>
                                     <action selector="selectDominoWithSender:" destination="Jf6-xk-giz" eventType="touchUpInside" id="XNM-cC-bM7"/>
                                 </connections>
@@ -498,58 +499,94 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Wq-MO-dD5" userLabel="Back">
-                                <rect key="frame" x="20" y="61" width="90" height="87"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="90" id="aYS-lk-8TM"/>
-                                    <constraint firstAttribute="height" constant="87" id="xQt-zs-GBc"/>
-                                </constraints>
-                                <state key="normal" image="arrow.png"/>
+                                <rect key="frame" x="112.66666666666669" y="61" width="189" height="79"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="56"/>
+                                <state key="normal" title="Restart">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.018125088720000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
                                     <action selector="backSelect:" destination="DhH-tV-hx4" eventType="touchUpInside" id="1Ej-MC-Qqy"/>
                                     <action selector="helpTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="976-em-q4n"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qu7-ZP-WxI">
-                                <rect key="frame" x="141" y="44" width="254" height="0.0"/>
-                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="48"/>
-                                <color key="textColor" red="1" green="0.955133597" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nzK-5C-9Rz">
+                                <rect key="frame" x="20" y="165" width="374" height="597"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="seo-nm-z0h">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" reuseIdentifier="dominoCell" id="dLg-fl-soF" customClass="DominoCollectionViewCell" customModule="The_Domino_Effect" customModuleProvider="target">
+                                        <rect key="frame" x="65" y="0.0" width="244" height="404"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ng4-D2-QB1">
+                                            <rect key="frame" x="0.0" y="0.0" width="244" height="404"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="White Dominoes Non-Glow Set-00.png" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mz7-pJ-n9V">
+                                                    <rect key="frame" x="0.0" y="0.0" width="244" height="404"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="404" id="fpI-aq-xNt"/>
+                                                        <constraint firstAttribute="width" constant="244" id="sdG-2e-dnH"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="mz7-pJ-n9V" secondAttribute="trailing" id="N7h-nq-rEv"/>
+                                                <constraint firstAttribute="bottom" secondItem="mz7-pJ-n9V" secondAttribute="bottom" id="Sqd-3o-fwK"/>
+                                                <constraint firstItem="mz7-pJ-n9V" firstAttribute="leading" secondItem="ng4-D2-QB1" secondAttribute="leading" id="ZPH-tB-dWw"/>
+                                                <constraint firstItem="mz7-pJ-n9V" firstAttribute="top" secondItem="ng4-D2-QB1" secondAttribute="top" id="uh2-8L-f4g"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="244" height="404"/>
+                                        <connections>
+                                            <outlet property="dominoImageView" destination="mz7-pJ-n9V" id="r8r-1S-pI6"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="i1l-dJ-Ep9"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Qu7-ZP-WxI" firstAttribute="top" secondItem="i1l-dJ-Ep9" secondAttribute="top" id="3Yn-8E-Q18"/>
-                            <constraint firstItem="Qu7-ZP-WxI" firstAttribute="leading" secondItem="6Wq-MO-dD5" secondAttribute="trailing" constant="31" id="XKU-Sk-fYo"/>
-                            <constraint firstItem="i1l-dJ-Ep9" firstAttribute="trailing" secondItem="Qu7-ZP-WxI" secondAttribute="trailing" constant="19" id="dgF-P4-pvY"/>
-                            <constraint firstItem="6Wq-MO-dD5" firstAttribute="leading" secondItem="i1l-dJ-Ep9" secondAttribute="leading" constant="20" id="ij2-fB-gbk"/>
-                            <constraint firstItem="6Wq-MO-dD5" firstAttribute="top" secondItem="i1l-dJ-Ep9" secondAttribute="top" constant="17" id="mHr-62-aig"/>
+                            <constraint firstItem="nzK-5C-9Rz" firstAttribute="top" secondItem="6Wq-MO-dD5" secondAttribute="bottom" constant="25" id="DlF-QR-ZpX"/>
+                            <constraint firstItem="6Wq-MO-dD5" firstAttribute="top" secondItem="i1l-dJ-Ep9" secondAttribute="top" constant="17" id="IaO-bH-TfX"/>
+                            <constraint firstItem="i1l-dJ-Ep9" firstAttribute="bottom" secondItem="nzK-5C-9Rz" secondAttribute="bottom" constant="100" id="IpF-tj-xSE"/>
+                            <constraint firstItem="nzK-5C-9Rz" firstAttribute="leading" secondItem="i1l-dJ-Ep9" secondAttribute="leading" constant="20" id="J8s-5b-Kve"/>
+                            <constraint firstItem="i1l-dJ-Ep9" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6Wq-MO-dD5" secondAttribute="trailing" id="SV3-rE-F4a"/>
+                            <constraint firstItem="i1l-dJ-Ep9" firstAttribute="trailing" secondItem="nzK-5C-9Rz" secondAttribute="trailing" constant="20" id="XPw-MV-Rws"/>
+                            <constraint firstItem="nzK-5C-9Rz" firstAttribute="top" secondItem="6Wq-MO-dD5" secondAttribute="bottom" constant="25" id="mEI-rm-xSZ"/>
+                            <constraint firstItem="6Wq-MO-dD5" firstAttribute="centerX" secondItem="i1l-dJ-Ep9" secondAttribute="centerX" id="mx4-m1-lLD"/>
+                            <constraint firstItem="6Wq-MO-dD5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="i1l-dJ-Ep9" secondAttribute="leading" id="ta2-3v-sc1"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6l4-QX-Y7G"/>
                     <connections>
+                        <outlet property="resultCollectionView" destination="nzK-5C-9Rz" id="j3R-N6-CCe"/>
                         <segue destination="jQb-b9-3lt" kind="unwind" identifier="unwind" unwindAction="unwindToSelectorBaseWithSender:" id="bG3-BD-g9u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2pk-yf-bTK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="jQb-b9-3lt" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1913" y="609"/>
+            <point key="canvasLocation" x="1911.594202898551" y="608.70535714285711"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Aqua Dominoes Non-Glow Set-06.png" width="121.19999694824219" height="202.08000183105469"/>
-        <image name="Forest Green Dominoes Non-Glow Set-05.png" width="121" height="202.08000183105469"/>
+        <image name="Aqua Dominos Non-Glow Set-06.png" width="121.19999694824219" height="202.08000183105469"/>
+        <image name="Forest Green Dominos Non-Glow Set-05.png" width="121" height="202.08000183105469"/>
         <image name="Lime Green Dominos Non-Glow Set-04.png" width="121.19999694824219" height="202.08000183105469"/>
         <image name="Orange Dominos Non-Glow Set-02.png" width="121.19999694824219" height="202.08000183105469"/>
-        <image name="Pink Dominoes Non-Glow Set-09.png" width="121.19999694824219" height="202.08000183105469"/>
-        <image name="Purple Dominoes Non-Glow Set-08.png" width="121.19999694824219" height="202.08000183105469"/>
+        <image name="Pink Dominos Non-Glow Set-09.png" width="121.19999694824219" height="202.08000183105469"/>
+        <image name="Purple Dominos Non-Glow Set-08.png" width="121.19999694824219" height="202.08000183105469"/>
         <image name="Red Dominos Non-Glow Set-01.png" width="121.19999694824219" height="202.08000183105469"/>
-        <image name="Royal Blue Dominoes Non-Glow Set-07.png" width="121.19999694824219" height="202.08000183105469"/>
+        <image name="Royal Blue Dominos Non-Glow Set-07.png" width="121.19999694824219" height="202.08000183105469"/>
         <image name="Settings.png" width="90" height="87"/>
         <image name="The Domino Effect Logo-02.png" width="208.08000183105469" height="196.32000732421875"/>
         <image name="White Dominoes Non-Glow Set-00.png" width="121" height="202.08000183105469"/>
-        <image name="White Dominoes Non-Glow Set-010.png" width="121" height="202.08000183105469"/>
+        <image name="White Dominos Non-Glow Set-00.png" width="121" height="202.08000183105469"/>
         <image name="Yellow Dominos Non-Glow Set-03.png" width="121.19999694824219" height="202.08000183105469"/>
         <image name="arrow.png" width="90" height="87"/>
         <image name="help.png" width="90" height="87"/>

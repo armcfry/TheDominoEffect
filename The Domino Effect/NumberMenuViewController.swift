@@ -11,9 +11,7 @@ import UIKit
 class NumberMenuViewController: UIViewController{
     
     @IBOutlet weak var backButton: UIButton!
-    
     @IBOutlet weak var zeroDomino: UIButton!
-    
     @IBOutlet weak var oneDomino: UIButton!
     @IBOutlet weak var twoDomino: UIButton!
     @IBOutlet weak var threeDomino: UIButton!
@@ -75,17 +73,17 @@ class NumberMenuViewController: UIViewController{
         case 4:
             setButtons(imageName: "Lime Green Dominos Non-Glow Set-0")
         case 5:
-            setButtons(imageName: "Forest Green Dominoes Non-Glow Set-0")
+            setButtons(imageName: "Forest Green Dominos Non-Glow Set-0")
         case 6:
-            setButtons(imageName: "Aqua Dominoes Non-Glow Set-0")
+            setButtons(imageName: "Aqua Dominos Non-Glow Set-0")
         case 7:
-            setButtons(imageName: "Royal Blue Dominoes Non-Glow Set-0")
+            setButtons(imageName: "Royal Blue Dominos Non-Glow Set-0")
         case 8:
-            setButtons(imageName: "Purple Dominoes Non-Glow Set-0")
+            setButtons(imageName: "Purple Dominos Non-Glow Set-0")
         case 9:
-            setButtons(imageName: "Pink Dominoes Non-Glow Set-0")
+            setButtons(imageName: "Pink Dominos Non-Glow Set-0")
         case 0:
-            setButtons(imageName: "White Dominoes Non-Glow Set-0")
+            setButtons(imageName: "White Dominos Non-Glow Set-0")
         default:
             print("default")
         }
