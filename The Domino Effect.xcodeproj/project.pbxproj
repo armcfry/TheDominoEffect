@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		671FD36E254E08B800AB58F3 /* DominoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671FD36D254E08B800AB58F3 /* DominoCollectionViewCell.swift */; };
+		671FD37925510FAA00AB58F3 /* SelectCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671FD37825510FAA00AB58F3 /* SelectCollectionViewCell.swift */; };
 		676929E225211C5A00A9A04B /* NumberMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676929E125211C5A00A9A04B /* NumberMenuViewController.swift */; };
 		676929EA2522DB9000A9A04B /* start2.png in Resources */ = {isa = PBXBuildFile; fileRef = 676929E92522DB9000A9A04B /* start2.png */; };
 		676929ED25253CB000A9A04B /* Domino.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676929EC25253CB000A9A04B /* Domino.swift */; };
@@ -236,6 +237,7 @@
 
 /* Begin PBXFileReference section */
 		671FD36D254E08B800AB58F3 /* DominoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DominoCollectionViewCell.swift; sourceTree = "<group>"; };
+		671FD37825510FAA00AB58F3 /* SelectCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCollectionViewCell.swift; sourceTree = "<group>"; };
 		676929E125211C5A00A9A04B /* NumberMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberMenuViewController.swift; sourceTree = "<group>"; };
 		676929E92522DB9000A9A04B /* start2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start2.png; sourceTree = "<group>"; };
 		676929EC25253CB000A9A04B /* Domino.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Domino.swift; sourceTree = "<group>"; };
@@ -496,6 +498,7 @@
 			children = (
 				67E384C5251BA64400296DCE /* SoundManager.swift */,
 				676929EC25253CB000A9A04B /* Domino.swift */,
+				671FD37825510FAA00AB58F3 /* SelectCollectionViewCell.swift */,
 				671FD36D254E08B800AB58F3 /* DominoCollectionViewCell.swift */,
 				676929F525256B5200A9A04B /* DominoManager.swift */,
 				6776A03724E1B0A100D5C5C1 /* AppDelegate.swift */,
@@ -1279,6 +1282,7 @@
 				671FD36E254E08B800AB58F3 /* DominoCollectionViewCell.swift in Sources */,
 				676929F625256B5200A9A04B /* DominoManager.swift in Sources */,
 				67E384C42519720F00296DCE /* HelpViewController.swift in Sources */,
+				671FD37925510FAA00AB58F3 /* SelectCollectionViewCell.swift in Sources */,
 				676929ED25253CB000A9A04B /* Domino.swift in Sources */,
 				676929E225211C5A00A9A04B /* NumberMenuViewController.swift in Sources */,
 				67E384C6251BA64400296DCE /* SoundManager.swift in Sources */,

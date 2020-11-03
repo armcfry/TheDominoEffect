@@ -29,27 +29,21 @@ class ResultsViewController:UIViewController, UICollectionViewDelegate, UICollec
         // set view controller as datasource and delegate of collectionView
         resultCollectionView.dataSource = self
         resultCollectionView.delegate = self
-        
-        
     }
     
     
     // MARK: - Collection View Delegate Methods
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
         //return number of sorted dominos
         print(DominoManager.shared.dominosFiltered.count)
-        
         return DominoManager.shared.dominosFiltered.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         // get a cell
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "dominoCell", for: indexPath) as! DominoCollectionViewCell
-        
-        // TODO: configure it
+        // configure it
         cell.setCellImage(domino: DominoManager.shared.dominosFiltered[indexPath.row])
-
         // return it
         return cell
     }
