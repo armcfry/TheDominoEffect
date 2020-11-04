@@ -13,7 +13,8 @@ class SelectCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var dominoButton: UIButton!
     
     func setCellImage(imgName:String){
-        dominoButton.setImage(UIImage(named: imgName), for: .normal)
+        let thisBImage = "\(imgName)\(dominoButton.tag).png"
+        dominoButton.setImage(UIImage(named: thisBImage), for: .normal)
     }
 
     func setCellTag(tag:Int){

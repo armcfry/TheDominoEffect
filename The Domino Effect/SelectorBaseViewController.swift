@@ -55,7 +55,6 @@ class SelectorBaseViewController: UIViewController, UICollectionViewDelegate, UI
         })
     }
     
-    
     @IBAction func moveToSort(_ sender: UIButton) {
         groupSelect = 11
         let filterResult = DominoManager.shared.filterDominos(dominos:DominoManager.shared.dominos)
@@ -87,6 +86,7 @@ class SelectorBaseViewController: UIViewController, UICollectionViewDelegate, UI
     
     
     // MARK: - Collection View Delegate Methods
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return DominoManager.shared.menuDominos.count
     }
@@ -95,8 +95,13 @@ class SelectorBaseViewController: UIViewController, UICollectionViewDelegate, UI
         //get a cell
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "dominoButtonCell", for: indexPath) as! SelectCollectionViewCell
         // configure it
+        if indexPath.row + 1 == 10{
+            cell.setCellTag(tag:0)
+        } else{
+            cell.setCellTag(tag:indexPath.row+1)
+        }
+        
         cell.setCellImage(imgName: DominoManager.shared.menuDominos[indexPath.row])
-        cell.setCellTag(tag:indexPath.row+1)
         cell.dominoButton.addTarget(self, action: #selector(self.buttonClicked), for: .touchUpInside)
         // return it
         return cell
