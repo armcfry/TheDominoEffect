@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController, HelpViewControllerProtocol {
 
     // variables
-    let player = SoundManager()
+    //let player = SoundManager()
     var music = false
     var helpDialogue:HelpViewController?
     var numStartTap = 0
@@ -23,7 +23,7 @@ class ViewController: UIViewController, HelpViewControllerProtocol {
     @IBOutlet weak var startButton: UIButton!
     
     @IBAction func startTap(_ sender: UIButton) {
-        player.playSound(effect: .select)
+        SoundManager.shared.playSound(effect: .select)
         if numStartTap == 0{
             DominoManager.shared.initializeDominos()
         }
@@ -38,7 +38,7 @@ class ViewController: UIViewController, HelpViewControllerProtocol {
     // IBOutlet Functions
     @IBAction func helpTap(_ sender: UIButton) {
         //let button = sender as UIButton
-        player.playSound(effect: .select)
+        SoundManager.shared.playSound(effect: .select)
         helpDialogue!.titleText = "ABOUT"
         helpDialogue!.feedbackText = "The Domino Effect is an iOS application that sorts a collection of user-specified dominoes. The use case for this application will be a companion when playing a round of dominoes. Press start, then select the dominoes you wish to sort, then press sort."
         helpDialogue!.buttonText = "DISMISS";
@@ -49,18 +49,18 @@ class ViewController: UIViewController, HelpViewControllerProtocol {
     }
     
     @IBAction func settingsTap(_ sender: UIButton) {
-        player.playSound(effect: .select)
+        SoundManager.shared.playSound(effect: .select)
     }
     
     @IBAction func soundTap(_ sender: UIButton) {
-        player.playSound(effect: .select)
+        SoundManager.shared.playSound(effect: .select)
         if music == true{
-            player.removeVolume()
+            SoundManager.shared.removeVolume()
             soundButton.setImage(UIImage(named: "soundOff.png"), for: .normal)
             music = false
         }
         else{
-            player.addVolume()
+            SoundManager.shared.addVolume()
             soundButton.setImage(UIImage(named: "sound.png"), for: .normal)
             music = true
         }
@@ -71,7 +71,7 @@ class ViewController: UIViewController, HelpViewControllerProtocol {
         super.viewDidLoad()
         
         // background music for the main menu
-        player.playSound(effect: .mainMenu)
+        SoundManager.shared.playSound(effect: .mainMenu)
         music = true
         
         

@@ -13,6 +13,7 @@ class SelectorBaseViewController: UIViewController, UICollectionViewDelegate, UI
     
     @IBOutlet weak var backButton: UIButton!
     @IBAction func backSelect(_ sender: UIButton) {
+        SoundManager.shared.playSound(effect: .select)
         performSegue(withIdentifier: "unwind", sender: self)
     }
     
@@ -22,6 +23,7 @@ class SelectorBaseViewController: UIViewController, UICollectionViewDelegate, UI
     
     var groupSelect = 4
     @objc func buttonClicked(_ sender: UIButton){
+        SoundManager.shared.playSound(effect: .select)
         switch sender.tag {
             case 1:
                 groupSelect = 1
@@ -56,6 +58,7 @@ class SelectorBaseViewController: UIViewController, UICollectionViewDelegate, UI
     }
     
     @IBAction func moveToSort(_ sender: UIButton) {
+        SoundManager.shared.playSound(effect: .select)
         groupSelect = 11
         let filterResult = DominoManager.shared.filterDominos(dominos:DominoManager.shared.dominos)
         if filterResult.count >= 2{

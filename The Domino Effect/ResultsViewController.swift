@@ -14,6 +14,7 @@ class ResultsViewController:UIViewController, UICollectionViewDelegate, UICollec
     var indexNum = 1
     @IBOutlet weak var resultCollectionView: UICollectionView!
     @IBAction func backSelect(_ sender: UIButton) {
+        SoundManager.shared.playSound(effect: .select)
         DominoManager.shared.resetDominos()
         performSegue(withIdentifier: "unwind", sender: self)
     }

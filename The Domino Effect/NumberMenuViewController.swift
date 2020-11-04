@@ -23,6 +23,7 @@ class NumberMenuViewController: UIViewController, UICollectionViewDelegate, UICo
     
     // go back to the previous screen
     @IBAction func backSelect(_ sender: UIButton) {
+        SoundManager.shared.playSound(effect: .select)
         performSegue(withIdentifier: "unwind", sender: self)
     }
     
@@ -31,6 +32,7 @@ class NumberMenuViewController: UIViewController, UICollectionViewDelegate, UICo
     }
     
     @objc func buttonClicked(_ sender: UIButton){
+        SoundManager.shared.playSound(effect: .select)
         DominoManager.shared.selectDomino(head: numberToShow, tail: sender.tag)
         if DominoManager.shared.dominos[numberToShow][sender.tag].isSelected == true {
             sender.layer.opacity -= 0.5;
