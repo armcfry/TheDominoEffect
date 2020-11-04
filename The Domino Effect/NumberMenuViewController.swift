@@ -8,47 +8,17 @@
 
 import UIKit
 
-class NumberMenuViewController: UIViewController{
+class NumberMenuViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource{
     
     @IBOutlet weak var backButton: UIButton!
-    @IBOutlet weak var zeroDomino: UIButton!
-    @IBOutlet weak var oneDomino: UIButton!
-    @IBOutlet weak var twoDomino: UIButton!
-    @IBOutlet weak var threeDomino: UIButton!
-    @IBOutlet weak var fourDomino: UIButton!
-    @IBOutlet weak var fiveDomino: UIButton!
-    @IBOutlet weak var sixDomino: UIButton!
-    @IBOutlet weak var sevenDomino: UIButton!
-    @IBOutlet weak var eightDomino: UIButton!
-    @IBOutlet weak var nineDomino: UIButton!
+    @IBOutlet weak var numberMenuCollectionView: UICollectionView!
     
-    @IBOutlet var dominoCollection: Array<UIButton>!
 
     var numberToShow = 0
     
     @IBAction func selectDomino(sender: UIButton) {
 
-        DominoManager.shared.selectDomino(head: numberToShow, tail: sender.tag)
-        if DominoManager.shared.dominos[numberToShow][sender.tag].isSelected == true {
-            sender.layer.opacity -= 0.5;
-        }
-        else{
-            sender.layer.opacity += 0.5;
-        }
-        print(DominoManager.shared.dominos)
-    }
-    
-    func setButtons (imageName: String){
-        for button in dominoCollection{
-            let thisBImage = "\(imageName)\(button.tag).png"
-            button.setImage(UIImage(named: thisBImage), for: .normal)
-            if DominoManager.shared.dominos[numberToShow][button.tag].isSelected == true {
-                button.layer.opacity = 0.5
-            }
-            else{
-                button.layer.opacity = 1
-            }
-        }
+
     }
     
     // go back to the previous screen
@@ -60,33 +30,86 @@ class NumberMenuViewController: UIViewController{
         
     }
     
+    @objc func buttonClicked(_ sender: UIButton){
+        DominoManager.shared.selectDomino(head: numberToShow, tail: sender.tag)
+        if DominoManager.shared.dominos[numberToShow][sender.tag].isSelected == true {
+            sender.layer.opacity -= 0.5;
+        }
+        else{
+            sender.layer.opacity += 0.5;
+        }
+        print(DominoManager.shared.dominos)
+    }
+    
     override func viewWillAppear(_ animated: Bool)
     {
         // change the outfit for the buttons
-        switch numberToShow {
-        case 1:
-            setButtons(imageName: "Red Dominos Non-Glow Set-0")
-        case 2:
-            setButtons(imageName: "Orange Dominos Non-Glow Set-0")
-        case 3:
-            setButtons(imageName: "Yellow Dominos Non-Glow Set-0")
-        case 4:
-            setButtons(imageName: "Lime Green Dominos Non-Glow Set-0")
-        case 5:
-            setButtons(imageName: "Forest Green Dominos Non-Glow Set-0")
-        case 6:
-            setButtons(imageName: "Aqua Dominos Non-Glow Set-0")
-        case 7:
-            setButtons(imageName: "Royal Blue Dominos Non-Glow Set-0")
-        case 8:
-            setButtons(imageName: "Purple Dominos Non-Glow Set-0")
-        case 9:
-            setButtons(imageName: "Pink Dominos Non-Glow Set-0")
-        case 0:
-            setButtons(imageName: "White Dominos Non-Glow Set-0")
-        default:
-            print("default")
+
+    }
+    
+    override func viewDidLoad() {
+        // set view controller as datasource and delegate of collectionView
+        numberMenuCollectionView.dataSource = self
+        numberMenuCollectionView.delegate = self
+    }
+    
+    // MARK: - Collection View Delegate Methods
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return DominoManager.shared.menuDominos.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        //get a cell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "dominoButtonCell", for: indexPath) as! SelectCollectionViewCell
+        // configure it
+        
+        // set the tag
+        if indexPath.row + 1 == 10{
+            cell.setCellTag(tag:0)
+        } else{
+            cell.setCellTag(tag:indexPath.row+1)
         }
+        
+        // set the image
+        switch numberToShow {
+            case 1:
+                cell.setCellImage(imgName: "Red Dominos Non-Glow Set-0")
+            case 2:
+                cell.setCellImage(imgName: "Orange Dominos Non-Glow Set-0")
+            case 3:
+                cell.setCellImage(imgName: "Yellow Dominos Non-Glow Set-0")
+            case 4:
+                cell.setCellImage(imgName: "Lime Green Dominos Non-Glow Set-0")
+            case 5:
+                cell.setCellImage(imgName: "Forest Green Dominos Non-Glow Set-0")
+            case 6:
+                cell.setCellImage(imgName: "Aqua Dominos Non-Glow Set-0")
+            case 7:
+                cell.setCellImage(imgName: "Royal Blue Dominos Non-Glow Set-0")
+            case 8:
+                cell.setCellImage(imgName: "Purple Dominos Non-Glow Set-0")
+            case 9:
+                cell.setCellImage(imgName: "Pink Dominos Non-Glow Set-0")
+            case 0:
+                cell.setCellImage(imgName: "White Dominos Non-Glow Set-0")
+            default:
+                print("default")
+        }
+        
+        // check if the domino has been marked as selected or not yet
+        if DominoManager.shared.dominos[numberToShow][cell.dominoButton.tag].isSelected == true {
+            cell.dominoButton.layer.opacity = 0.5
+        }
+        else{
+            cell.dominoButton.layer.opacity = 1
+        }
+        
+        // add button function
+        cell.dominoButton.addTarget(self, action: #selector(self.buttonClicked), for: .touchUpInside)
+        // return it
+        return cell
+
     }
     
 }

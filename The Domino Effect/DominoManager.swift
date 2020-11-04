@@ -14,6 +14,16 @@ class DominoManager {
     var dominos:[[Domino]] = [[]]
     var dominosFiltered:[Domino] = []
     var dominosSorted:[Domino] = []
+    var menuDominos:[String] = ["Red Dominos Non-Glow Set-0",
+                                "Orange Dominos Non-Glow Set-0",
+                                "Yellow Dominos Non-Glow Set-0",
+                                "Lime Green Dominos Non-Glow Set-0",
+                                "Forest Green Dominos Non-Glow Set-0",
+                                "Aqua Dominos Non-Glow Set-0",
+                                "Royal Blue Dominos Non-Glow Set-0",
+                                "Purple Dominos Non-Glow Set-0",
+                                "Pink Dominos Non-Glow Set-0",
+                                "White Dominos Non-Glow Set-0"]
         
     static let shared = DominoManager()
     
