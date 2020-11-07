@@ -8,9 +8,9 @@
 
 import UIKit
 
-class SelectorBaseViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource{
-    
-    
+class SelectorBaseViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UIPickerViewDelegate, UIPickerViewDataSource{
+
+    @IBOutlet weak var headDominoField: UITextField!
     @IBOutlet weak var backButton: UIButton!
     @IBAction func backSelect(_ sender: UIButton) {
         SoundManager.shared.playSound(effect: .select)
@@ -22,6 +22,7 @@ class SelectorBaseViewController: UIViewController, UICollectionViewDelegate, UI
     @IBOutlet weak var selectCollectionView: UICollectionView!
     
     var groupSelect = 4
+    let pickerNumbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
     @objc func buttonClicked(_ sender: UIButton){
         SoundManager.shared.playSound(effect: .select)
         switch sender.tag {
@@ -57,13 +58,38 @@ class SelectorBaseViewController: UIViewController, UICollectionViewDelegate, UI
         })
     }
     
+
+    func setHeadDominoPicker() {
+        
+        // set up the PickerView and set the delegate
+        let thePicker = UIPickerView()
+        thePicker.delegate = self
+        headDominoField.inputView = thePicker
+        
+        // toolbar to allow user to say they are done selecting a head domino
+        let toolBar = UIToolbar()
+        toolBar.sizeToFit()
+        let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(self.action))
+        toolBar.setItems([doneButton], animated: true)
+        toolBar.isUserInteractionEnabled = true
+        headDominoField.inputAccessoryView = toolBar
+        
+        //customize domino field
+        headDominoField.layer.borderWidth = 1
+        headDominoField.layer.borderColor = UIColor.white.cgColor
+    }
+    
+    @objc func action() {
+          view.endEditing(true)
+    }
+    
     @IBAction func moveToSort(_ sender: UIButton) {
         SoundManager.shared.playSound(effect: .select)
         groupSelect = 11
         let filterResult = DominoManager.shared.filterDominos(dominos:DominoManager.shared.dominos)
-        if filterResult.count >= 2{
+        if filterResult.count >= 2 && DominoManager.shared.leadDomino != -1{
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
-               self.performSegue(withIdentifier: "moveToSort", sender: self)
+               self.performSegue(withIdentifier: "moveToSortSegue", sender: self)
             })
         }
         else{
@@ -85,6 +111,7 @@ class SelectorBaseViewController: UIViewController, UICollectionViewDelegate, UI
         // set view controller as datasource and delegate of collectionView
         selectCollectionView.dataSource = self
         selectCollectionView.delegate = self
+        setHeadDominoPicker()
     }
     
     
@@ -110,5 +137,24 @@ class SelectorBaseViewController: UIViewController, UICollectionViewDelegate, UI
         return cell
 
     }
-    
+
+
+    // MARK: - Picker View Deleate Methods
+
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerNumbers.count
+    }
+        
+    func pickerView( _ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return String(pickerNumbers[row])
+    }
+
+    func pickerView( _ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        headDominoField.text = String(pickerNumbers[row])
+        DominoManager.shared.leadDomino = pickerNumbers[row]
+    }
 }

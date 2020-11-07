@@ -11,7 +11,6 @@ import UIKit
 class ViewController: UIViewController, HelpViewControllerProtocol {
 
     // variables
-    //let player = SoundManager()
     var music = false
     var helpDialogue:HelpViewController?
     var numStartTap = 0

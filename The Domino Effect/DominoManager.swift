@@ -24,6 +24,8 @@ class DominoManager {
                                 "Purple Dominos Non-Glow Set-0",
                                 "Pink Dominos Non-Glow Set-0",
                                 "White Dominos Non-Glow Set-0"]
+    
+    var leadDomino = -1
         
     static let shared = DominoManager()
     
