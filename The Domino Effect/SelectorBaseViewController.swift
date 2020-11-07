@@ -44,7 +44,7 @@ class SelectorBaseViewController: UIViewController, UICollectionViewDelegate, UI
                 groupSelect = 8
             case 9:
                 groupSelect = 9
-            case 10:
+            case 0:
                 groupSelect = 0
             default:
                 print("default")

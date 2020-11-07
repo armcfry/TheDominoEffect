@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="The Domino Effect Logo-02.png" translatesAutoresizingMaskIntoConstraints="NO" id="OgN-9V-OqN" userLabel="Title Logo">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="The Domino Effect Logo-02.png" translatesAutoresizingMaskIntoConstraints="NO" id="OgN-9V-OqN" userLabel="Title Logo">
                                 <rect key="frame" x="32" y="74" width="350" height="320"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEW-BH-MyN" userLabel="Start button">
@@ -104,7 +104,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="239" y="138"/>
+            <point key="canvasLocation" x="233" y="200"/>
         </scene>
         <!--Selector Base View Controller-->
         <scene sceneID="TAz-Yz-nXX">
@@ -128,13 +128,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SELECT NUMBER" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8Z-qK-5wN">
-                                <rect key="frame" x="141" y="44.000000000000007" width="254" height="114.66666666666669"/>
+                                <rect key="frame" x="141" y="44" width="254" height="129"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
                                 <color key="textColor" red="1" green="0.955133597" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvV-l0-8cH">
-                                <rect key="frame" x="215" y="773.33333333333337" width="149" height="79"/>
+                                <rect key="frame" x="215" y="759.33333333333337" width="149" height="79"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="56"/>
                                 <state key="normal" title="SORT">
                                     <color key="titleColor" red="1" green="0.955133597" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -144,7 +144,7 @@
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="QjH-dC-Ik4" userLabel="Select Collection View">
-                                <rect key="frame" x="20" y="188.66666666666669" width="374" height="528.66666666666652"/>
+                                <rect key="frame" x="20" y="202.99999999999997" width="374" height="500.33333333333326"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="LIw-Ez-VpV">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -182,13 +182,13 @@
                                 </cells>
                             </collectionView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lih-nI-qsR">
-                                <rect key="frame" x="50" y="774.66666666666663" width="40" height="76.666666666666629"/>
+                                <rect key="frame" x="50" y="760.33333333333337" width="40" height="76.666666666666629"/>
                                 <color key="textColor" red="0.0" green="1" blue="0.018125088720000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HEAD:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yl1-bX-BfM">
-                                <rect key="frame" x="39" y="741.66666666666663" width="62" height="24"/>
+                                <rect key="frame" x="39" y="727.33333333333337" width="62" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="1" blue="0.018125088720000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -206,6 +206,7 @@
                             <constraint firstItem="lWk-Fd-9a2" firstAttribute="top" secondItem="ivx-nP-Nfb" secondAttribute="top" constant="17" id="NNu-Qc-HHc"/>
                             <constraint firstItem="lih-nI-qsR" firstAttribute="centerY" secondItem="rvV-l0-8cH" secondAttribute="centerY" id="Nwi-KS-SgL"/>
                             <constraint firstItem="QjH-dC-Ik4" firstAttribute="centerY" secondItem="ivx-nP-Nfb" secondAttribute="centerY" id="cjo-l9-HLs"/>
+                            <constraint firstItem="ivx-nP-Nfb" firstAttribute="bottom" secondItem="lih-nI-qsR" secondAttribute="bottom" constant="25" id="fxx-zb-JiK"/>
                             <constraint firstItem="ivx-nP-Nfb" firstAttribute="trailing" secondItem="QjH-dC-Ik4" secondAttribute="trailing" constant="20" id="j6o-hL-3Fd"/>
                             <constraint firstItem="T8Z-qK-5wN" firstAttribute="top" secondItem="ivx-nP-Nfb" secondAttribute="top" id="jVh-aR-TWB"/>
                             <constraint firstItem="ivx-nP-Nfb" firstAttribute="trailing" secondItem="T8Z-qK-5wN" secondAttribute="trailing" constant="19" id="mdy-k8-8xQ"/>
@@ -247,13 +248,13 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="q3F-KC-MqK">
                                         <rect key="frame" x="20" y="0.0" width="254" height="568"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABOUT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J5w-d4-AF9">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABOUT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J5w-d4-AF9">
                                                 <rect key="frame" x="0.0" y="0.0" width="254" height="271.33333333333331"/>
                                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="50"/>
                                                 <color key="textColor" red="0.0" green="1" blue="0.018125088720000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WgY-JO-cnv">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WgY-JO-cnv">
                                                 <rect key="frame" x="0.0" y="271.33333333333331" width="254" height="108.66666666666669"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                 <color key="textColor" red="1" green="0.95513359695713218" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -312,7 +313,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b2m-py-SkP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-486" y="819"/>
+            <point key="canvasLocation" x="-486.95652173913049" y="818.97321428571422"/>
         </scene>
         <!--Number Menu View Controller-->
         <scene sceneID="zh2-wg-9Kx">
