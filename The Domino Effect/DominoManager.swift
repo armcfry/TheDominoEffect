@@ -91,7 +91,6 @@ class DominoManager {
     func filterDominos(dominos:[[Domino]]) -> [Domino]{
         
         // gather the dominos from the list of dominos and filter by only ones that are selected
-
         for x in 0...9 {
             for y in 0...9 {
                 if self.dominos[x][y].clicked == true{
@@ -107,10 +106,74 @@ class DominoManager {
         return dominosFiltered
     }
     
+    func getDominoSum(dominos:[Domino]) -> Int{
+        var sum = 0
+        for domino in dominos{
+            sum += domino.head
+            sum += domino.tail
+        }
+        return sum
+    }
+    
+    func getMatchList(toSort:[Domino], numSearch:Int)->[Domino]{
+        var matchList = [Domino]()
+        for domino in toSort{
+            if domino.head == numSearch || domino.tail == numSearch{
+                matchList.append(domino)
+            }
+        }
+        return matchList
+    }
+    
+    func getDominoPaths(matchList:[Domino])->[[Domino]]{
+        var paths:[[Domino]] =  [[]]
+        var tempNumSearch = 0
+        var returnList:[Domino] = []
+        var tempList = dominosFiltered
+        for domino in matchList{
+            returnList.append(domino)
+            // remove the current domino from consideration
+            for x in tempList{
+                if (x.head == domino.head && x.tail == domino.tail) || (x.head == domino.tail && x.tail == domino.head){
+                    tempList = tempList.filter{($0.head != x.head) && ($0.tail != x.tail)}
+                }
+            }
+            // grab the next number to seach for
+            tempNumSearch = domino.head == leadDomino ? domino.head : domino.tail
+            
+            // find dominos that link the the search number
+            let anotherTemp = getMatchList(toSort: tempList, numSearch: tempNumSearch)
+            
+            // recurse if there are more to find, end this branch if not
+            if anotherTemp.count != 0 {
+                getDominoPaths(matchList: anotherTemp)
+            }
+            else{
+                paths.append(returnList)
+                returnList = []
+                tempList = dominosFiltered
+            }
+        }
+        return paths
+    }
+    
     func sortDominos(dominos:[Domino]) -> [Domino]{
         
+        // get sum of dominos to sort
+        let totalSum = getDominoSum(dominos: dominos)
+        
+        // find all possible paths
         
         
+        // find sum of each path
+        
+        // find the remainder after each path
+        
+        // if a path = 0, choose that
+        
+        // else choose smallest remainder
+    
+        // return list of dominos that are now sorted
         return dominosSorted
     }
     
