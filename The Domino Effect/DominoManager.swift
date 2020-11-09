@@ -26,7 +26,26 @@ class DominoManager {
                                 "White Dominos Non-Glow Set-0"]
     
     var leadDomino = -1
-        
+    
+    // for the sort function
+    var tempNumSearch:Int = 0
+    var paths:[[Domino]] =  [[]]
+    var returnList:[Domino] = []
+    
+    
+    
+    var testSet:[Domino] = [Domino(head: 2, tail: 3, isSelected: true, clicked: true, imageName: "Orange Dominos Non-Glow Set-03"),
+                            Domino(head: 2, tail: 5, isSelected: true, clicked: true, imageName: "Orange Dominos Non-Glow Set-05"),
+                            Domino(head: 9, tail: 5, isSelected: true, clicked: true, imageName: "Pink Dominos Non-Glow Set-05"),
+                            Domino(head: 5, tail: 7, isSelected: true, clicked: true, imageName: "Forest Green Dominos Non-Glow Set-07"),
+                            Domino(head: 8, tail: 1, isSelected: true, clicked: true, imageName: "Purple Dominos Non-Glow Set-01"),
+                            Domino(head: 9, tail: 8, isSelected: true, clicked: true, imageName: "Pink Dominos Non-Glow Set-08"),
+                            Domino(head: 9, tail: 3, isSelected: true, clicked: true, imageName: "Pink Dominos Non-Glow Set-03"),
+                            Domino(head: 5, tail: 6, isSelected: true, clicked: true, imageName: "Forest Green Dominos Non-Glow Set-06"),
+                            Domino(head: 6, tail: 4, isSelected: true, clicked: true, imageName: "Aqua Dominos Non-Glow Set-04")
+                            ]
+    
+    
     static let shared = DominoManager()
     
     // set up all dominos; will be called on reset so the user can sort again
@@ -125,33 +144,68 @@ class DominoManager {
         return matchList
     }
     
-    func getDominoPaths(matchList:[Domino])->[[Domino]]{
-        var paths:[[Domino]] =  [[]]
-        var tempNumSearch = 0
-        var returnList:[Domino] = []
-        var tempList = dominosFiltered
+    func getCommonNumber(list:[Domino])->Int{
+        var numInCommon = 0
+        var temp:[Int] = []
+        for domino in list{
+            if !temp.contains(domino.head){
+                temp.append(domino.head)
+            } else {
+                numInCommon = domino.head
+                return numInCommon
+            }
+            if !temp.contains(domino.tail){
+                temp.append(domino.tail)
+            } else{
+                numInCommon = domino.tail
+                return numInCommon
+            }
+        }
+        return numInCommon
+    }
+    
+    func getDominoPaths(matchList:[Domino], tempFilterList:[Domino])->[[Domino]]{
+        var tempList = tempFilterList
         for domino in matchList{
             returnList.append(domino)
+            print(returnList)
+            
             // remove the current domino from consideration
             for x in tempList{
                 if (x.head == domino.head && x.tail == domino.tail) || (x.head == domino.tail && x.tail == domino.head){
-                    tempList = tempList.filter{($0.head != x.head) && ($0.tail != x.tail)}
+                    tempList = tempList.filter{($0.imageName != x.imageName)}
                 }
             }
-            // grab the next number to seach for
-            tempNumSearch = domino.head == leadDomino ? domino.head : domino.tail
+            print("\n\nTemp List:")
+            print(tempList)
+            print("\n\n")
+            // if the node has several children, find the number that they all have in common
+            if matchList.count > 1{
+                tempNumSearch = getCommonNumber(list: matchList)
+            }
             
-            // find dominos that link the the search number
+            // grab the next number to seach for
+            if domino.head != tempNumSearch{
+                tempNumSearch = domino.head
+            } else{
+                tempNumSearch = domino.tail
+            }
+            print(tempNumSearch)
+            
+            // find the child nodes
             let anotherTemp = getMatchList(toSort: tempList, numSearch: tempNumSearch)
             
             // recurse if there are more to find, end this branch if not
             if anotherTemp.count != 0 {
-                getDominoPaths(matchList: anotherTemp)
+                getDominoPaths(matchList: anotherTemp, tempFilterList: tempList)
+                returnList.removeLast()
+
             }
             else{
                 paths.append(returnList)
-                returnList = []
-                tempList = dominosFiltered
+                //tempList = testSet
+                returnList.removeLast()
+                
             }
         }
         return paths
@@ -162,8 +216,11 @@ class DominoManager {
         // get sum of dominos to sort
         let totalSum = getDominoSum(dominos: dominos)
         
-        // find all possible paths
+        // get matchList based on the filtered list that is passed in
+        let matchList = getMatchList(toSort: dominos, numSearch: leadDomino)
         
+        // find all possible paths
+        let paths = getDominoPaths(matchList: matchList, tempFilterList: dominos)
         
         // find sum of each path
         
