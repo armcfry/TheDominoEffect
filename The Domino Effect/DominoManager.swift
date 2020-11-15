@@ -213,34 +213,37 @@ class DominoManager {
         // get matchList based on the filtered list that is passed in
         let matchList = getMatchList(toSort: dominosToSort, numSearch: leadDomino)
         
-        // find all possible paths
-        var paths = getDominoPaths(matchList: matchList, tempFilterList: dominosToSort)
-        paths.removeFirst()
-        
-        // find sum of each path
-        for path in paths{
-            sums.append(getDominoSum(dominos: path))
-        }
-        
-        // find the index of the path with the smallest sum
-        let leastSum:Int = sums.max()!
-        let index = sums.firstIndex(of: leastSum)
-        
-        // set the sorted path
-        dominosSorted = paths[index!]
-        
-        // clean up the list (make sure the tails match the heads of the next domino)
-        var x = leadDomino
-        let limit = dominosSorted.count - 1
-        for y in 0...limit{
-            if dominosSorted[y].tail == x{
-                x = dominosSorted[y].head
-                dominosSorted[y] = self.dominos[dominosSorted[y].tail][dominosSorted[y].head]
-            } else {
-                x = dominosSorted[y].tail
+        if matchList.count == 0{
+            return dominosSorted;
+        } else {
+            // find all possible paths
+            var paths = getDominoPaths(matchList: matchList, tempFilterList: dominosToSort)
+            paths.removeFirst()
+            
+            // find sum of each path
+            for path in paths{
+                sums.append(getDominoSum(dominos: path))
+            }
+            
+            // find the index of the path with the smallest sum
+            let leastSum:Int = sums.max()!
+            let index = sums.firstIndex(of: leastSum)
+            
+            // set the sorted path
+            dominosSorted = paths[index!]
+            
+            // clean up the list (make sure the tails match the heads of the next domino)
+            var x = leadDomino
+            let limit = dominosSorted.count - 1
+            for y in 0...limit{
+                if dominosSorted[y].tail == x{
+                    x = dominosSorted[y].head
+                    dominosSorted[y] = self.dominos[dominosSorted[y].tail][dominosSorted[y].head]
+                } else {
+                    x = dominosSorted[y].tail
+                }
             }
         }
-        
         // return list of dominos that are now sorted
         return dominosSorted
     }
