@@ -36,15 +36,15 @@ class ResultsViewController:UIViewController, UICollectionViewDelegate, UICollec
     // MARK: - Collection View Delegate Methods
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         //return number of sorted dominos
-        print(DominoManager.shared.dominosFiltered.count)
-        return DominoManager.shared.dominosFiltered.count
+        print(DominoManager.shared.dominosSorted.count)
+        return DominoManager.shared.dominosSorted.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         // get a cell
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "dominoCell", for: indexPath) as! DominoCollectionViewCell
         // configure it
-        cell.setCellImage(domino: DominoManager.shared.dominosFiltered[indexPath.row])
+        cell.setCellImage(domino: DominoManager.shared.dominosSorted[indexPath.row])
         // return it
         return cell
     }

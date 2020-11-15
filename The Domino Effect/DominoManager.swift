@@ -164,21 +164,18 @@ class DominoManager {
         return numInCommon
     }
     
+    
     func getDominoPaths(matchList:[Domino], tempFilterList:[Domino])->[[Domino]]{
         var tempList = tempFilterList
         for domino in matchList{
+            print(domino)
             returnList.append(domino)
-            print(returnList)
-            
             // remove the current domino from consideration
             for x in tempList{
                 if (x.head == domino.head && x.tail == domino.tail) || (x.head == domino.tail && x.tail == domino.head){
                     tempList = tempList.filter{($0.imageName != x.imageName)}
                 }
             }
-            print("\n\nTemp List:")
-            print(tempList)
-            print("\n\n")
             // if the node has several children, find the number that they all have in common
             if matchList.count > 1{
                 tempNumSearch = getCommonNumber(list: matchList)
@@ -198,21 +195,18 @@ class DominoManager {
             // recurse if there are more to find, end this branch if not
             if anotherTemp.count != 0 {
                 getDominoPaths(matchList: anotherTemp, tempFilterList: tempList)
-                returnList.removeLast()
-
             }
             else{
                 paths.append(returnList)
-                //tempList = testSet
-                returnList.removeLast()
-                
             }
+            returnList.removeLast()
+            tempList.append(domino)
         }
         return paths
     }
     
     func sortDominos(dominos:[Domino]) -> [Domino]{
-        
+        var sums:[Int] = []
         // get sum of dominos to sort
         let totalSum = getDominoSum(dominos: dominos)
         
@@ -220,15 +214,21 @@ class DominoManager {
         let matchList = getMatchList(toSort: dominos, numSearch: leadDomino)
         
         // find all possible paths
-        let paths = getDominoPaths(matchList: matchList, tempFilterList: dominos)
+        var paths = getDominoPaths(matchList: matchList, tempFilterList: dominos)
+        paths.removeFirst()
         
         // find sum of each path
+        for path in paths{
+            sums.append(getDominoSum(dominos: path))
+        }
+        //sums.removeFirst()
         
-        // find the remainder after each path
+        // find the index of the path with the smallest sum
+        let leastSum:Int = sums.max()!
+        let index = sums.firstIndex(of: leastSum)
         
-        // if a path = 0, choose that
-        
-        // else choose smallest remainder
+        // set the sorted path
+        dominosSorted = paths[index!]
     
         // return list of dominos that are now sorted
         return dominosSorted

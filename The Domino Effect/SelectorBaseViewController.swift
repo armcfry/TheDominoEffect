@@ -87,12 +87,11 @@ class SelectorBaseViewController: UIViewController, UICollectionViewDelegate, UI
         SoundManager.shared.playSound(effect: .select)
         groupSelect = 11
         let filterResult = DominoManager.shared.filterDominos(dominos:DominoManager.shared.dominos)
-        let testing = DominoManager.shared.testSet
-        let matchSet = DominoManager.shared.getMatchList(toSort: testing, numSearch: 9)
-        DominoManager.shared.tempNumSearch = DominoManager.shared.leadDomino
-        let paths = DominoManager.shared.getDominoPaths(matchList: matchSet, tempFilterList: DominoManager.shared.testSet)
-        print(paths)
-        if filterResult.count >= 2 && DominoManager.shared.leadDomino != -1{
+        let head = DominoManager.shared.leadDomino
+        if filterResult.count >= 2 && head != -1{
+            DominoManager.shared.tempNumSearch = head
+            let paths = DominoManager.shared.sortDominos(dominos: filterResult)
+            print(paths)
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
                self.performSegue(withIdentifier: "moveToSortSegue", sender: self)
             })
