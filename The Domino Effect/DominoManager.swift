@@ -205,23 +205,22 @@ class DominoManager {
         return paths
     }
     
-    func sortDominos(dominos:[Domino]) -> [Domino]{
+    func sortDominos(dominosToSort:[Domino]) -> [Domino]{
         var sums:[Int] = []
         // get sum of dominos to sort
-        let totalSum = getDominoSum(dominos: dominos)
+        let totalSum = getDominoSum(dominos: dominosToSort)
         
         // get matchList based on the filtered list that is passed in
-        let matchList = getMatchList(toSort: dominos, numSearch: leadDomino)
+        let matchList = getMatchList(toSort: dominosToSort, numSearch: leadDomino)
         
         // find all possible paths
-        var paths = getDominoPaths(matchList: matchList, tempFilterList: dominos)
+        var paths = getDominoPaths(matchList: matchList, tempFilterList: dominosToSort)
         paths.removeFirst()
         
         // find sum of each path
         for path in paths{
             sums.append(getDominoSum(dominos: path))
         }
-        //sums.removeFirst()
         
         // find the index of the path with the smallest sum
         let leastSum:Int = sums.max()!
@@ -229,7 +228,19 @@ class DominoManager {
         
         // set the sorted path
         dominosSorted = paths[index!]
-    
+        
+        // clean up the list (make sure the tails match the heads of the next domino)
+        var x = leadDomino
+        let limit = dominosSorted.count - 1
+        for y in 0...limit{
+            if dominosSorted[y].tail == x{
+                x = dominosSorted[y].head
+                dominosSorted[y] = self.dominos[dominosSorted[y].tail][dominosSorted[y].head]
+            } else {
+                x = dominosSorted[y].tail
+            }
+        }
+        
         // return list of dominos that are now sorted
         return dominosSorted
     }
@@ -240,6 +251,7 @@ class DominoManager {
         self.dominosFiltered = []
         self.dominosSorted = []
         self.initializeDominos()
+        paths = [[]]
     }
     
     //Initializer access level change now

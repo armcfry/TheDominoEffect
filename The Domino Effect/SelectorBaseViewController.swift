@@ -90,7 +90,7 @@ class SelectorBaseViewController: UIViewController, UICollectionViewDelegate, UI
         let head = DominoManager.shared.leadDomino
         if filterResult.count >= 2 && head != -1{
             DominoManager.shared.tempNumSearch = head
-            let paths = DominoManager.shared.sortDominos(dominos: filterResult)
+            let paths = DominoManager.shared.sortDominos(dominosToSort: filterResult)
             print(paths)
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
                self.performSegue(withIdentifier: "moveToSortSegue", sender: self)
@@ -105,7 +105,6 @@ class SelectorBaseViewController: UIViewController, UICollectionViewDelegate, UI
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         if segue.destination is NumberMenuViewController{
             let segVC = segue.destination as! NumberMenuViewController
-        
             // send the VC what domino was selected
             segVC.numberToShow = groupSelect
         }
@@ -139,7 +138,6 @@ class SelectorBaseViewController: UIViewController, UICollectionViewDelegate, UI
         cell.dominoButton.addTarget(self, action: #selector(self.buttonClicked), for: .touchUpInside)
         // return it
         return cell
-
     }
 
 
