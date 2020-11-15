@@ -208,7 +208,7 @@ class DominoManager {
     func sortDominos(dominosToSort:[Domino]) -> [Domino]{
         var sums:[Int] = []
         // get sum of dominos to sort
-        let totalSum = getDominoSum(dominos: dominosToSort)
+        //let totalSum = getDominoSum(dominos: dominosToSort)
         
         // get matchList based on the filtered list that is passed in
         let matchList = getMatchList(toSort: dominosToSort, numSearch: leadDomino)
