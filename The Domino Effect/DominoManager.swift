@@ -87,7 +87,7 @@ class DominoManager {
                 dominos.append(temp)
             }
         }
-        print(dominos)
+        //print(dominos)
     }
     
     // function to call when a domino is selected
@@ -121,7 +121,7 @@ class DominoManager {
                 }
             }
         }
-        print(dominosFiltered)
+        //print(dominosFiltered)
         return dominosFiltered
     }
     
@@ -168,7 +168,7 @@ class DominoManager {
     func getDominoPaths(matchList:[Domino], tempFilterList:[Domino])->[[Domino]]{
         var tempList = tempFilterList
         for domino in matchList{
-            print(domino)
+            //print(domino)
             returnList.append(domino)
             // remove the current domino from consideration
             for x in tempList{
@@ -187,7 +187,7 @@ class DominoManager {
             } else{
                 tempNumSearch = domino.tail
             }
-            print(tempNumSearch)
+            //print(tempNumSearch)
             
             // find the child nodes
             let anotherTemp = getMatchList(toSort: tempList, numSearch: tempNumSearch)
@@ -255,6 +255,7 @@ class DominoManager {
         self.dominosSorted = []
         self.initializeDominos()
         paths = [[]]
+        self.leadDomino = -1
     }
     
     //Initializer access level change now

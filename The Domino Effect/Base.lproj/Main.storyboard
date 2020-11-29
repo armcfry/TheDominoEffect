@@ -42,16 +42,6 @@
                                             <action selector="helpTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o6M-Md-EhN"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EuB-F0-aWd" userLabel="Settings">
-                                        <rect key="frame" x="142" y="0.0" width="90" height="87"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="EuB-F0-aWd" secondAttribute="height" multiplier="30:29" id="Cd5-Ha-rcy"/>
-                                        </constraints>
-                                        <state key="normal" image="Settings.png"/>
-                                        <connections>
-                                            <action selector="settingsTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xcn-1c-Loh"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" tag="3" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PLl-Hn-fue" userLabel="Sound">
                                         <rect key="frame" x="284" y="0.0" width="90" height="87"/>
                                         <constraints>
@@ -64,10 +54,8 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="EuB-F0-aWd" firstAttribute="height" secondItem="qGg-0c-0h4" secondAttribute="height" id="RKP-SE-mQC"/>
                                     <constraint firstItem="PLl-Hn-fue" firstAttribute="height" secondItem="qGg-0c-0h4" secondAttribute="height" id="TaL-4t-Sh6"/>
                                     <constraint firstItem="PLl-Hn-fue" firstAttribute="width" secondItem="qGg-0c-0h4" secondAttribute="width" id="gaQ-BC-oK1"/>
-                                    <constraint firstItem="EuB-F0-aWd" firstAttribute="width" secondItem="qGg-0c-0h4" secondAttribute="width" id="jON-Uj-8zv"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -95,7 +83,6 @@
                     <navigationItem key="navigationItem" id="eiu-f5-PdP"/>
                     <connections>
                         <outlet property="helpButton" destination="qGg-0c-0h4" id="MQK-Bx-xag"/>
-                        <outlet property="settingButton" destination="EuB-F0-aWd" id="MBF-ac-2uw"/>
                         <outlet property="soundButton" destination="PLl-Hn-fue" id="aMK-PU-R5o"/>
                         <outlet property="startButton" destination="CEW-BH-MyN" id="8QY-NQ-TYT"/>
                         <segue destination="4hq-cB-7h8" kind="presentation" identifier="selectionBase" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="qap-fM-sH7"/>
@@ -133,7 +120,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvV-l0-8cH">
-                                <rect key="frame" x="215" y="759.33333333333337" width="149" height="79"/>
+                                <rect key="frame" x="190" y="759.33333333333337" width="174" height="79"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="56"/>
                                 <state key="normal" title="SORT">
                                     <color key="titleColor" red="1" green="0.955133597" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -158,7 +145,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="122" height="202"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2t-5X-TH8" userLabel="DominoButton">
+                                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2t-5X-TH8" userLabel="DominoButton">
                                                     <rect key="frame" x="0.0" y="0.0" width="122" height="202"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="122" id="edU-BB-clT"/>
@@ -200,6 +187,7 @@
                             <constraint firstItem="QjH-dC-Ik4" firstAttribute="centerX" secondItem="ivx-nP-Nfb" secondAttribute="centerX" id="8M6-Ae-XKp"/>
                             <constraint firstItem="lih-nI-qsR" firstAttribute="top" secondItem="yl1-bX-BfM" secondAttribute="bottom" constant="9" id="B6M-Zj-TXp"/>
                             <constraint firstItem="QjH-dC-Ik4" firstAttribute="top" secondItem="T8Z-qK-5wN" secondAttribute="bottom" constant="30" id="BJS-ST-Ses"/>
+                            <constraint firstItem="rvV-l0-8cH" firstAttribute="leading" secondItem="ivx-nP-Nfb" secondAttribute="leading" constant="190" id="CyD-3Q-lRS"/>
                             <constraint firstItem="yl1-bX-BfM" firstAttribute="centerX" secondItem="lih-nI-qsR" secondAttribute="centerX" id="Ki1-LL-9RX"/>
                             <constraint firstItem="QjH-dC-Ik4" firstAttribute="leading" secondItem="ivx-nP-Nfb" secondAttribute="leading" constant="20" id="Lhs-nq-Y9a"/>
                             <constraint firstItem="lWk-Fd-9a2" firstAttribute="top" secondItem="ivx-nP-Nfb" secondAttribute="top" constant="17" id="NNu-Qc-HHc"/>
@@ -489,7 +477,6 @@
     </scenes>
     <resources>
         <image name="Aqua Dominoes-01.png" width="121.19999694824219" height="202.08000183105469"/>
-        <image name="Settings.png" width="90" height="87"/>
         <image name="The Domino Effect Logo-02.png" width="208.08000183105469" height="196.32000732421875"/>
         <image name="White Dominos Non-Glow Set-00.png" width="121" height="202.08000183105469"/>
         <image name="arrow.png" width="90" height="87"/>
