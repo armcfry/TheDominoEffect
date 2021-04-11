@@ -107,6 +107,10 @@
 		678048D42532B08500F443DB /* White Dominoes-07.png in Resources */ = {isa = PBXBuildFile; fileRef = 678048982532B08400F443DB /* White Dominoes-07.png */; };
 		678048D52532B08500F443DB /* White Dominoes-09.png in Resources */ = {isa = PBXBuildFile; fileRef = 678048992532B08400F443DB /* White Dominoes-09.png */; };
 		678048D62532B08500F443DB /* White Dominoes-08.png in Resources */ = {isa = PBXBuildFile; fileRef = 6780489A2532B08400F443DB /* White Dominoes-08.png */; };
+		67C154A9261BD96F0035B99C /* The_Domino_EffectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C154A8261BD96F0035B99C /* The_Domino_EffectUITests.swift */; };
+		67C154BD26237A6F0035B99C /* The_Domino_EffectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C154BC26237A6F0035B99C /* The_Domino_EffectTests.swift */; };
+		67C154C726237C3E0035B99C /* Domino.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676929EC25253CB000A9A04B /* Domino.swift */; };
+		67C154C826237C3E0035B99C /* DominoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676929F525256B5200A9A04B /* DominoManager.swift */; };
 		67C7085F253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-08.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C70855253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-08.png */; };
 		67C70860253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-09.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C70856253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-09.png */; };
 		67C70861253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-00.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C70857253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-00.png */; };
@@ -235,6 +239,23 @@
 		67EC41662532355A007C2B0B /* Yellow Dominos-02.png in Resources */ = {isa = PBXBuildFile; fileRef = 67EC410C2532355A007C2B0B /* Yellow Dominos-02.png */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		67C154AB261BD96F0035B99C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6776A02C24E1B0A100D5C5C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6776A03324E1B0A100D5C5C1;
+			remoteInfo = "The Domino Effect";
+		};
+		67C154BF26237A6F0035B99C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6776A02C24E1B0A100D5C5C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6776A03324E1B0A100D5C5C1;
+			remoteInfo = "The Domino Effect";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		671FD36D254E08B800AB58F3 /* DominoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DominoCollectionViewCell.swift; sourceTree = "<group>"; };
 		671FD37825510FAA00AB58F3 /* SelectCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -338,6 +359,12 @@
 		678048982532B08400F443DB /* White Dominoes-07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "White Dominoes-07.png"; sourceTree = "<group>"; };
 		678048992532B08400F443DB /* White Dominoes-09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "White Dominoes-09.png"; sourceTree = "<group>"; };
 		6780489A2532B08400F443DB /* White Dominoes-08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "White Dominoes-08.png"; sourceTree = "<group>"; };
+		67C154A6261BD96F0035B99C /* The Domino EffectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Domino EffectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67C154A8261BD96F0035B99C /* The_Domino_EffectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Domino_EffectUITests.swift; sourceTree = "<group>"; };
+		67C154AA261BD96F0035B99C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67C154BA26237A6F0035B99C /* The Domino EffectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Domino EffectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67C154BC26237A6F0035B99C /* The_Domino_EffectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Domino_EffectTests.swift; sourceTree = "<group>"; };
+		67C154BE26237A6F0035B99C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67C70855253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Orange Dominos Non-Glow Set-08.png"; sourceTree = "<group>"; };
 		67C70856253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Orange Dominos Non-Glow Set-09.png"; sourceTree = "<group>"; };
 		67C70857253D29DB00AA26A7 /* Orange Dominos Non-Glow Set-00.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Orange Dominos Non-Glow Set-00.png"; sourceTree = "<group>"; };
@@ -474,6 +501,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		67C154A3261BD96F0035B99C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67C154B726237A6F0035B99C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -481,6 +522,8 @@
 			isa = PBXGroup;
 			children = (
 				6776A03624E1B0A100D5C5C1 /* The Domino Effect */,
+				67C154A7261BD96F0035B99C /* The Domino EffectUITests */,
+				67C154BB26237A6F0035B99C /* The Domino EffectTests */,
 				6776A03524E1B0A100D5C5C1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -489,6 +532,8 @@
 			isa = PBXGroup;
 			children = (
 				6776A03424E1B0A100D5C5C1 /* The Domino Effect.app */,
+				67C154A6261BD96F0035B99C /* The Domino EffectUITests.xctest */,
+				67C154BA26237A6F0035B99C /* The Domino EffectTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -705,6 +750,24 @@
 				6780489A2532B08400F443DB /* White Dominoes-08.png */,
 			);
 			path = "Glow Set";
+			sourceTree = "<group>";
+		};
+		67C154A7261BD96F0035B99C /* The Domino EffectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				67C154A8261BD96F0035B99C /* The_Domino_EffectUITests.swift */,
+				67C154AA261BD96F0035B99C /* Info.plist */,
+			);
+			path = "The Domino EffectUITests";
+			sourceTree = "<group>";
+		};
+		67C154BB26237A6F0035B99C /* The Domino EffectTests */ = {
+			isa = PBXGroup;
+			children = (
+				67C154BC26237A6F0035B99C /* The_Domino_EffectTests.swift */,
+				67C154BE26237A6F0035B99C /* Info.plist */,
+			);
+			path = "The Domino EffectTests";
 			sourceTree = "<group>";
 		};
 		67C70854253D29DB00AA26A7 /* Non-Glow Set */ = {
@@ -1012,18 +1075,62 @@
 			productReference = 6776A03424E1B0A100D5C5C1 /* The Domino Effect.app */;
 			productType = "com.apple.product-type.application";
 		};
+		67C154A5261BD96F0035B99C /* The Domino EffectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67C154AD261BD96F0035B99C /* Build configuration list for PBXNativeTarget "The Domino EffectUITests" */;
+			buildPhases = (
+				67C154A2261BD96F0035B99C /* Sources */,
+				67C154A3261BD96F0035B99C /* Frameworks */,
+				67C154A4261BD96F0035B99C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67C154AC261BD96F0035B99C /* PBXTargetDependency */,
+			);
+			name = "The Domino EffectUITests";
+			productName = "The Domino EffectUITests";
+			productReference = 67C154A6261BD96F0035B99C /* The Domino EffectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		67C154B926237A6F0035B99C /* The Domino EffectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67C154C126237A6F0035B99C /* Build configuration list for PBXNativeTarget "The Domino EffectTests" */;
+			buildPhases = (
+				67C154B626237A6F0035B99C /* Sources */,
+				67C154B726237A6F0035B99C /* Frameworks */,
+				67C154B826237A6F0035B99C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67C154C026237A6F0035B99C /* PBXTargetDependency */,
+			);
+			name = "The Domino EffectTests";
+			productName = "The Domino EffectTests";
+			productReference = 67C154BA26237A6F0035B99C /* The Domino EffectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		6776A02C24E1B0A100D5C5C1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1160;
-				LastUpgradeCheck = 1160;
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "Adam McFry";
 				TargetAttributes = {
 					6776A03324E1B0A100D5C5C1 = {
 						CreatedOnToolsVersion = 11.6;
+					};
+					67C154A5261BD96F0035B99C = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 6776A03324E1B0A100D5C5C1;
+					};
+					67C154B926237A6F0035B99C = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 6776A03324E1B0A100D5C5C1;
 					};
 				};
 			};
@@ -1041,6 +1148,8 @@
 			projectRoot = "";
 			targets = (
 				6776A03324E1B0A100D5C5C1 /* The Domino Effect */,
+				67C154A5261BD96F0035B99C /* The Domino EffectUITests */,
+				67C154B926237A6F0035B99C /* The Domino EffectTests */,
 			);
 		};
 /* End PBXProject section */
@@ -1267,6 +1376,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		67C154A4261BD96F0035B99C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67C154B826237A6F0035B99C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1289,7 +1412,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		67C154A2261BD96F0035B99C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67C154A9261BD96F0035B99C /* The_Domino_EffectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67C154B626237A6F0035B99C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67C154C726237C3E0035B99C /* Domino.swift in Sources */,
+				67C154C826237C3E0035B99C /* DominoManager.swift in Sources */,
+				67C154BD26237A6F0035B99C /* The_Domino_EffectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		67C154AC261BD96F0035B99C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6776A03324E1B0A100D5C5C1 /* The Domino Effect */;
+			targetProxy = 67C154AB261BD96F0035B99C /* PBXContainerItemProxy */;
+		};
+		67C154C026237A6F0035B99C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6776A03324E1B0A100D5C5C1 /* The Domino Effect */;
+			targetProxy = 67C154BF26237A6F0035B99C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6776A03D24E1B0A100D5C5C1 /* Main.storyboard */ = {
@@ -1337,6 +1491,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1397,6 +1552,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1436,7 +1592,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "armcfry.The-Domino-Effect";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1455,11 +1611,93 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "armcfry.The-Domino-Effect";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		67C154AE261BD96F0035B99C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 795U2KNE85;
+				INFOPLIST_FILE = "The Domino EffectUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "armcfry.The-Domino-EffectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "The Domino Effect";
+			};
+			name = Debug;
+		};
+		67C154AF261BD96F0035B99C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 795U2KNE85;
+				INFOPLIST_FILE = "The Domino EffectUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "armcfry.The-Domino-EffectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "The Domino Effect";
+			};
+			name = Release;
+		};
+		67C154C226237A6F0035B99C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 795U2KNE85;
+				INFOPLIST_FILE = "The Domino EffectTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "armcfry.The-Domino-EffectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The Domino Effect.app/The Domino Effect";
+			};
+			name = Debug;
+		};
+		67C154C326237A6F0035B99C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 795U2KNE85;
+				INFOPLIST_FILE = "The Domino EffectTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "armcfry.The-Domino-EffectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The Domino Effect.app/The Domino Effect";
 			};
 			name = Release;
 		};
@@ -1480,6 +1718,24 @@
 			buildConfigurations = (
 				6776A04924E1B0A400D5C5C1 /* Debug */,
 				6776A04A24E1B0A400D5C5C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67C154AD261BD96F0035B99C /* Build configuration list for PBXNativeTarget "The Domino EffectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67C154AE261BD96F0035B99C /* Debug */,
+				67C154AF261BD96F0035B99C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67C154C126237A6F0035B99C /* Build configuration list for PBXNativeTarget "The Domino EffectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67C154C226237A6F0035B99C /* Debug */,
+				67C154C326237A6F0035B99C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
